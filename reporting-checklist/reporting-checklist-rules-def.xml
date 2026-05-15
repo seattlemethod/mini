@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/26/2023 8:18:25 AM -->
+<?auditchain name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?auditchain name='CreationDateTime' value='4/26/2023 8:18:25 AM'?>
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='extended-link-roles.xsd#ReportingChecklist' roleURI='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist'/>
+ 
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-equivalentClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#financialReport-possibleDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-possibleDisclosure'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#financialReport-reportsConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#financialReport-requiresDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#reportingLineItem-requiresDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure'/>
+ 
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='General purpose financial report created under FRF for SMEs.  Strict, best practices.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:to='cm_FinancialReport' xlink:from='cm_Thing' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='A financial report REQUIRES a balance sheet.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_BalanceSheetClassified' xlink:label='disclosures_BalanceSheetClassified' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure' xlink:to='disclosures_BalanceSheetClassified' xlink:from='cm_FinancialReport' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If assets is reported;'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Assets' xlink:label='mini_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_Assets' xlink:from='cm_FinancialReport' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN an assets roll up is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Assets' xlink:label='mini_Assets' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_AssetsRollUp' xlink:label='disclosures_AssetsRollUp' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_AssetsRollUp' xlink:from='mini_Assets' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If liabilities and equity are reported;'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LiabilitiesAndEquity' xlink:label='mini_LiabilitiesAndEquity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_LiabilitiesAndEquity' xlink:from='cm_FinancialReport' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN a liabilities and equity roll up is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LiabilitiesAndEquity' xlink:label='mini_LiabilitiesAndEquity' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_LiabilitiesAndEquityRollUp' xlink:label='disclosures_LiabilitiesAndEquityRollUp' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_LiabilitiesAndEquityRollUp' xlink:from='mini_LiabilitiesAndEquity' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='A financial report REQUIRES an income statement.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_IncomeStatement' xlink:label='disclosures_IncomeStatement' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure' xlink:to='disclosures_IncomeStatement' xlink:from='cm_FinancialReport' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='A financial report REQUIRES a cash flow statement.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_CashFlowStatementDirectMethod' xlink:label='disclosures_CashFlowStatementDirectMethod' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure' xlink:to='disclosures_CashFlowStatementDirectMethod' xlink:from='cm_FinancialReport' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If net cash flow is reported;'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_NetCashFlow' xlink:from='cm_FinancialReport' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN an Cash and Cash Equivalents Summary roll forward is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_CashAndCashEquivalentsSummaryRollForward' xlink:label='disclosures_CashAndCashEquivalentsSummaryRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_CashAndCashEquivalentsSummaryRollForward' xlink:from='mini_NetCashFlow' order='10' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN an Net Cash Flow roll up is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_NetCashFlowRollUp' xlink:label='disclosures_NetCashFlowRollUp' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_NetCashFlowRollUp' xlink:from='mini_NetCashFlow' order='11' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='A financial report MUST contain a statement of changes in equity.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_StatementOfChangesInEquity' xlink:label='disclosures_StatementOfChangesInEquity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure' xlink:to='disclosures_StatementOfChangesInEquity' xlink:from='cm_FinancialReport' order='12' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='IF a financial report has the line item gaap:CashAndCashEquivalents'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_CashAndCashEquivalents' xlink:from='cm_FinancialReport' order='13' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN an cash and cash equivalents roll forward is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_CashAndCashEquivalentsRollForward' xlink:label='disclosures_CashAndCashEquivalentsRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_CashAndCashEquivalentsRollForward' xlink:from='mini_CashAndCashEquivalents' order='14' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN an cash and cash equivalents subclassifications is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_CashAndCashEquivalentsSubclassifications' xlink:label='disclosures_CashAndCashEquivalentsSubclassifications' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_CashAndCashEquivalentsSubclassifications' xlink:from='mini_CashAndCashEquivalents' order='15' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN an cash and cash equivalents policy is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_CashAndCashEquivalentsPolicy' xlink:label='disclosures_CashAndCashEquivalentsPolicy' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_CashAndCashEquivalentsPolicy' xlink:from='mini_CashAndCashEquivalents' order='16' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='IF a financial report has the line item gaap:ReceivablesNet'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_Receivables' xlink:from='cm_FinancialReport' order='17' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item receivables is reported: THEN the disclosure of the subclassifications of receivables is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_ReceivablesSubclassifications' xlink:label='disclosures_ReceivablesSubclassifications' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_ReceivablesSubclassifications' xlink:from='mini_Receivables' order='18' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item receivables is reported: THEN the disclosure of the receivables policy is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_ReceivablesPolicies' xlink:label='disclosures_ReceivablesPolicies' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_ReceivablesPolicies' xlink:from='mini_Receivables' order='19' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item receivables is reported: THEN the disclosure of the roll forward of receivables is required.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_ReceivablesRollForward' xlink:label='disclosures_ReceivablesRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_ReceivablesRollForward' xlink:from='mini_Receivables' order='20' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If a financial report contains the line item gaap:Inventory;'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_Inventories' xlink:from='cm_FinancialReport' order='21' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item inventory is reported; THEN the roll forward of invenfory is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_InventoriesRollForward' xlink:label='disclosures_InventoriesRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_InventoriesRollForward' xlink:from='mini_Inventories' order='22' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item inventory is reported; THEN the subclassifications of inventory is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_InventoriesSubclassifications' xlink:label='disclosures_InventoriesSubclassifications' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_InventoriesSubclassifications' xlink:from='mini_Inventories' order='23' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item inventory is reported; THEN an inventories policies is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_InventoriesPolicies' xlink:label='disclosures_InventoriesPolicies' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_InventoriesPolicies' xlink:from='mini_Inventories' order='24' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If a financial report contains the line item gaap:PropertyPlantAndEquipment'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_PropertyPlantAndEquipment' xlink:from='cm_FinancialReport' order='25' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item PPE is reported; THEN PPE subclassifications are required to be disclosed.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_PropertyPlantAndEquipmentNetSubclassifications' xlink:label='disclosures_PropertyPlantAndEquipmentNetSubclassifications' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_PropertyPlantAndEquipmentNetSubclassifications' xlink:from='mini_PropertyPlantAndEquipment' order='26' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item PPE is reported; THEN PPE roll forward is required to be disclosed.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_PropertyPlantAndEquipmentNetRollForward' xlink:label='disclosures_PropertyPlantAndEquipmentNetRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_PropertyPlantAndEquipmentNetRollForward' xlink:from='mini_PropertyPlantAndEquipment' order='27' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item PPE is reported; THEN PPE policies is required to be disclosed.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_PropertyPlantAndEquipmentPolicies' xlink:label='disclosures_PropertyPlantAndEquipmentPolicies' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_PropertyPlantAndEquipmentPolicies' xlink:from='mini_PropertyPlantAndEquipment' order='28' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='IF the line item payables and accruals is reported.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_AccountsPayable' xlink:from='cm_FinancialReport' order='29' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN a roll up of the components of payables and accruals is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_AccountsPayableSubclassifications' xlink:label='disclosures_AccountsPayableSubclassifications' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_AccountsPayableSubclassifications' xlink:from='mini_AccountsPayable' order='30' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN a roll up of the roll forward of payables and accruals is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_AccountsPayableRollForward' xlink:label='disclosures_AccountsPayableRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_AccountsPayableRollForward' xlink:from='mini_AccountsPayable' order='31' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='IF the line item accrued expenses is reported.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccruedExpenses' xlink:label='mini_AccruedExpenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_AccruedExpenses' xlink:from='cm_FinancialReport' order='32' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN a roll up of the components of payables and accruals is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccruedExpenses' xlink:label='mini_AccruedExpenses' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_AccruedExpensesRollForward' xlink:label='disclosures_AccruedExpensesRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_AccruedExpensesRollForward' xlink:from='mini_AccruedExpenses' order='33' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item Retained earnings is reported;'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RetainedEarnings' xlink:label='mini_RetainedEarnings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_RetainedEarnings' xlink:from='cm_FinancialReport' order='34' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='If the line item Long Term Debt is reported;'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LongtermDebt' xlink:label='mini_LongtermDebt' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept' xlink:to='mini_LongtermDebt' xlink:from='cm_FinancialReport' order='35' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN a roll forward up of the retained earnings is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RetainedEarnings' xlink:label='mini_RetainedEarnings' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_RetainedEarningsRollForward' xlink:label='disclosures_RetainedEarningsRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_RetainedEarningsRollForward' xlink:from='mini_RetainedEarnings' order='36' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='THEN a roll up of the roll forward of long term debt is required to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LongtermDebt' xlink:label='mini_LongtermDebt' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_LongTermDebtRollForward' xlink:label='disclosures_LongTermDebtRollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure' xlink:to='disclosures_LongTermDebtRollForward' xlink:from='mini_LongtermDebt' order='37' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='A financial report MAY have a TrialBalance disclosure'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_TrialBalance' xlink:label='disclosures_TrialBalance' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-possibleDisclosure' xlink:to='disclosures_TrialBalance' xlink:from='cm_FinancialReport' order='38' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/ReportingChecklist' xlink:title='A financial report MAY have a TransactionGrouping disclosure'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_TransactionsGroupings' xlink:label='disclosures_TransactionsGroupings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-possibleDisclosure' xlink:to='disclosures_TransactionsGroupings' xlink:from='cm_FinancialReport' order='39' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>
