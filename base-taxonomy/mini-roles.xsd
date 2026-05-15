@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<!-- Mini XBRL Financial Reporting Taxonomy Roles -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  xmlns:mini-roles='https://github.com/seattlemethod/mini/roles'
+  targetNamespace='https://github.com/seattlemethod/mini/roles'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+     <appinfo>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/BalanceSheet" id="BalanceSheet">
+	<link:definition>1102 - Statement - Balance Sheet</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/IncomeStatement" id="IncomeStatement">
+	<link:definition>1102 - Statement - Income Statement</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/CashFlowStatement" id="CashFlowStatement">
+	<link:definition>1103 - Statement - Cash Flow Statement</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/ChangesInEquity" id="ChangesInEquity">
+	<link:definition>1104 - Statement - Statement of Changes in Equity</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level1/NatureOfBusiness" id="NatureOfBusiness">
+	<link:definition>2110 - Disclosure - Nature of Business Note</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level1/BasisOfReporting" id="BasisOfReporting">
+	<link:definition>2120 - Disclosure - Basis of Reporting Note</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level2/SignificantAccountingPoliciesTextBlocks" id="SignificantAccountingPoliciesTextBlocks">
+	<link:definition>4000 - Disclosure - Significant Accounting Policies (Level 2 Policy Text Blocks)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalents" id="CashAndCashEquivalents">
+	<link:definition>6110 - Disclosure - Cash and Cash Equivalents Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/Receivables" id="Receivables">
+	<link:definition>6120 - Disclosure - Receivables Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/Inventories" id="Inventories">
+	<link:definition>6130 - Disclosure - Inventories Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/PropertyPlantAndEquipment" id="PropertyPlantAndEquipment">
+	<link:definition>6140 - Disclosure - Property, Plant, and Equipment Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/AccountsPayable" id="AccountsPayable">
+	<link:definition>7110 - Disclosure - Accounts Payable Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/AccruedExpenses" id="AccruedExpenses">
+	<link:definition>7115 - Disclosure - Accrued Expenses Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/LongTermDebt" id="LongTermDebt">
+	<link:definition>7120 - Disclosure - Long-term Debt Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/PaidInCapital" id="PaidInCapital">
+	<link:definition>7130 - Disclosure - Paid In Capital Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/RetainedEarnings" id="RetainedEarnings">
+	<link:definition>7140 - Disclosure - Retained Earnings Roll Forward (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalentsDetail" id="CashAndCashEquivalentsDetail">
+	<link:definition>8110 - Disclosure - Cash and Cash Equivalents Subclassifications (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/ReceivablesDetail" id="ReceivablesDetail">
+	<link:definition>8120 - Disclosure - Receivables Subclassifications (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/PropertyPlantAndEquipmentDetail" id="PropertyPlantAndEquipmentDetail">
+	<link:definition>8150 - Disclosure - Property, Plant, and Equipment Subclassifications (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/InventoriesDetail" id="InventoriesDetail">
+	<link:definition>8130 - Disclosure - Inventories Subclassifications (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/AccountsPayableDetail" id="AccountsPayableDetail">
+	<link:definition>8160 - Disclosure - Accounts Payable Subclassifications (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/LongTermDebtDetail" id="LongTermDebtDetail">
+	<link:definition>8170 - Disclosure - Long-term Debt Subclassifications (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/LongTermDebtMaturities" id="LongTermDebtMaturities">
+	<link:definition>8180 - Disclosure - Long-term Debt Maturities (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/TrialBalance" id="TrialBalance">
+	<link:definition>9101 - Support - Trial Balance (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/Transactions" id="Transactions">
+	<link:definition>9102 - Support - Transactions Groupings (Level 4 Detail)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+     </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<import namespace='http://xbrl.org/2008/generic' schemaLocation='http://www.xbrl.org/2008/generic-link.xsd' />
+</schema>

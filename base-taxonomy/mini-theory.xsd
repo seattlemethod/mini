@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Theory Schema -->
+<?xbrlsite name='Source' value='XBRL Site (Azure)'?>
+<?xbrlsite name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?xbrlsite name='CreatedDate' value='2026-05-15'?>
+<?xbrlsite name='ReportingSchemeTitle' value='MINI Financial Reporting Scheme 2026 (MINI)'?>
+<?xbrlsite name='Description' value='Financial reporting framework called MINI created as a working proof of concept to test XBRL, DCA, business events, etc.'?>
+<?xbrlsite name='ReportingStyles' value='../fac/reporting-styles-cm-ref.xml'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+
+  xmlns:topics='https://github.com/seattlemethod/mini/topics'
+  xmlns:disclosures='https://github.com/seattlemethod/mini/disclosures'
+  xmlns:dm='https://github.com/seattlemethod/mini/dm'
+  xmlns:style='https://github.com/seattlemethod/mini/fac/ReportingStyles/style374'
+  xmlns:type-subtype="https://github.com/seattlemethod/mini/type-subtype"
+
+  xmlns:mini='https://github.com/seattlemethod/mini'
+  xmlns:mini-entry='https://github.com/seattlemethod/mini/entry'
+  xmlns:mini-theory='https://github.com/seattlemethod/mini/theory'
+  targetNamespace='https://github.com/seattlemethod/mini/theory'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../reporting-checklist/reporting-checklist-rules-def.xml' xlink:title='Reporting Checklist' />
+
+
+
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+
+<import namespace='https://github.com/seattlemethod/mini/entry' schemaLocation='mini-entryPoint.xsd' />
+
+<import namespace='https://github.com/seattlemethod/mini/fac/ReportingStyles/style374' schemaLocation='../fac/reporting-styles/MINI-BSC-IS01-CF1_schema.xsd' />
+<import namespace='https://github.com/seattlemethod/mini/type-subtype' schemaLocation='../type-subtype/type-subtype.xsd' />
+<import namespace='https://github.com/seattlemethod/mini/topics' schemaLocation='../disclosures-topics/topics.xsd' />
+<import namespace='https://github.com/seattlemethod/mini/disclosures' schemaLocation='../disclosures-topics/disclosures.xsd' />
+<import namespace='https://github.com/seattlemethod/mini/dm' schemaLocation='../disclosure-mechanics/disclosure-mechanics.xsd' />
+
+
+</schema>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#PaidInCapital' roleURI='https://github.com/seattlemethod/mini/role/level4/PaidInCapital' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/PaidInCapital">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapitalRollForwardHypercube" xlink:label="mini_PaidInCapitalRollForwardHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapitalRollForwardLineItems" xlink:label="mini_PaidInCapitalRollForwardLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_PaidInCapitalRollForwardHypercube" xlink:to="mini_PaidInCapitalRollForwardLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapitalRollForward" xlink:label="mini_PaidInCapitalRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_PaidInCapitalRollForwardLineItems" xlink:to="mini_PaidInCapitalRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapital" xlink:label="mini_PaidInCapital"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="mini_PaidInCapitalRollForward" xlink:to="mini_PaidInCapital" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_InvestmentsByOwner" xlink:label="mini_InvestmentsByOwner"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_PaidInCapitalRollForward" xlink:to="mini_InvestmentsByOwner" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DistributionsToOwner" xlink:label="mini_DistributionsToOwner"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_PaidInCapitalRollForward" xlink:to="mini_DistributionsToOwner" order="3" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/PaidInCapital">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapitalRollForward" xlink:label="mini_PaidInCapitalRollForward"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapital" xlink:label="mini_PaidInCapital"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="mini_PaidInCapitalRollForward" xlink:to="mini_PaidInCapital" order="4" use="optional"/>
+</presentationLink>
+</link:linkbase>

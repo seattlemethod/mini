@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#CashFlowStatement' roleURI='https://github.com/seattlemethod/mini/role/level4/CashFlowStatement' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/CashFlowStatement">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlow" xlink:label="mini_NetCashFlow"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlowOperatingActivities" xlink:label="mini_NetCashFlowOperatingActivities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlow" xlink:to="mini_NetCashFlowOperatingActivities" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromCollectionOfReceivables" xlink:label="mini_ProceedsFromCollectionOfReceivables"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowOperatingActivities" xlink:to="mini_ProceedsFromCollectionOfReceivables" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentOfAccountsPayable" xlink:label="mini_PaymentOfAccountsPayable"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowOperatingActivities" xlink:to="mini_PaymentOfAccountsPayable" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlowFinancingActivities" xlink:label="mini_NetCashFlowFinancingActivities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlow" xlink:to="mini_NetCashFlowFinancingActivities" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromAdditionalLongtermBorrowings" xlink:label="mini_ProceedsFromAdditionalLongtermBorrowings"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowFinancingActivities" xlink:to="mini_ProceedsFromAdditionalLongtermBorrowings" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForReductionOfLongtermBorrowings" xlink:label="mini_PaymentForReductionOfLongtermBorrowings"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowFinancingActivities" xlink:to="mini_PaymentForReductionOfLongtermBorrowings" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentInterest" xlink:label="mini_PaymentInterest"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowFinancingActivities" xlink:to="mini_PaymentInterest" order="3" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromInvestmentsByOwner" xlink:label="mini_ProceedsFromInvestmentsByOwner"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowFinancingActivities" xlink:to="mini_ProceedsFromInvestmentsByOwner" order="4" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForDistributionsToOwner" xlink:label="mini_PaymentForDistributionsToOwner"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowFinancingActivities" xlink:to="mini_PaymentForDistributionsToOwner" order="5" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlowInvestingActivities" xlink:label="mini_NetCashFlowInvestingActivities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlow" xlink:to="mini_NetCashFlowInvestingActivities" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment" xlink:label="mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_NetCashFlowInvestingActivities" xlink:to="mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment" order="1" weight="-1" use="optional"/>
+</calculationLink>
+</link:linkbase>

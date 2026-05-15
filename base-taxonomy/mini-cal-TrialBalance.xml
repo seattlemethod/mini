@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#TrialBalance' roleURI='https://github.com/seattlemethod/mini/role/level4/TrialBalance' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/TrialBalance">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CheckSum" xlink:label="mini_CheckSum"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_CashAndCashEquivalents" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Receivables" xlink:label="mini_Receivables"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_Receivables" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Inventories" xlink:label="mini_Inventories"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_Inventories" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipment" xlink:label="mini_PropertyPlantAndEquipment"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_PropertyPlantAndEquipment" order="4" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayable" xlink:label="mini_AccountsPayable"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_AccountsPayable" order="5" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpenses" xlink:label="mini_AccruedExpenses"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_AccruedExpenses" order="6" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebt" xlink:label="mini_LongtermDebt"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_LongtermDebt" order="7" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapital" xlink:label="mini_PaidInCapital"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_PaidInCapital" order="8" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_RetainedEarnings" xlink:label="mini_RetainedEarnings"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_CheckSum" xlink:to="mini_RetainedEarnings" order="9" weight="-1" use="optional"/>
+</calculationLink>
+</link:linkbase>

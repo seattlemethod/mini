@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#CashAndCashEquivalentsDetail' roleURI='https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalentsDetail' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalentsDetail">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsSubclassificationsHypercube" xlink:label="mini_CashAndCashEquivalentsSubclassificationsHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsSubclassificationsLineItems" xlink:label="mini_CashAndCashEquivalentsSubclassificationsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsSubclassificationsHypercube" xlink:to="mini_CashAndCashEquivalentsSubclassificationsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsRollUp" xlink:label="mini_CashAndCashEquivalentsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsSubclassificationsLineItems" xlink:to="mini_CashAndCashEquivalentsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Cash" xlink:label="mini_Cash"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollUp" xlink:to="mini_Cash" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashEquivalents" xlink:label="mini_CashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollUp" xlink:to="mini_CashEquivalents" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollUp" xlink:to="mini_CashAndCashEquivalents" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#CashFlowStatement' roleURI='https://github.com/seattlemethod/mini/role/level4/CashFlowStatement' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/CashFlowStatement" xlink:title="1130 - Statement - Cash Flow Statement">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashFlowStatementLineItems" xlink:label="mini_CashFlowStatementLineItems"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashFlowStatementHypercube" xlink:label="mini_CashFlowStatementHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_CashFlowStatementHypercube" order="1" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromCollectionOfReceivables" xlink:label="mini_ProceedsFromCollectionOfReceivables"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_ProceedsFromCollectionOfReceivables" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentOfAccountsPayable" xlink:label="mini_PaymentOfAccountsPayable"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_PaymentOfAccountsPayable" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlowOperatingActivities" xlink:label="mini_NetCashFlowOperatingActivities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_NetCashFlowOperatingActivities" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromAdditionalLongtermBorrowings" xlink:label="mini_ProceedsFromAdditionalLongtermBorrowings"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_ProceedsFromAdditionalLongtermBorrowings" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForReductionOfLongtermBorrowings" xlink:label="mini_PaymentForReductionOfLongtermBorrowings"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_PaymentForReductionOfLongtermBorrowings" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentInterest" xlink:label="mini_PaymentInterest"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_PaymentInterest" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlowFinancingActivities" xlink:label="mini_NetCashFlowFinancingActivities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_NetCashFlowFinancingActivities" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment" xlink:label="mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlowInvestingActivities" xlink:label="mini_NetCashFlowInvestingActivities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_NetCashFlowInvestingActivities" order="10" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetCashFlow" xlink:label="mini_NetCashFlow"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_NetCashFlow" order="11" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromInvestmentsByOwner" xlink:label="mini_ProceedsFromInvestmentsByOwner"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_ProceedsFromInvestmentsByOwner" order="12" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_CashAndCashEquivalents" order="13" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForDistributionsToOwner" xlink:label="mini_PaymentForDistributionsToOwner"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashFlowStatementLineItems" xlink:to="mini_PaymentForDistributionsToOwner" order="14" use="optional"/>
+</definitionLink>
+</link:linkbase>

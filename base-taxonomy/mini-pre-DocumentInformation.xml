@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/7/2023 12:14:01 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#DocumentInformation' roleURI='https://github.com/seattlemethod/mini/role/level4/DocumentInformation' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/DocumentInformation">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DocumentInformationHypercube" xlink:label="mini_DocumentInformationHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DocumentInformationLineItems" xlink:label="mini_DocumentInformationLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationHypercube" xlink:to="mini_DocumentInformationLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DocumentInformationSet" xlink:label="mini_DocumentInformationSet"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationLineItems" xlink:to="mini_DocumentInformationSet" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ReportingStyleCode" xlink:label="mini_ReportingStyleCode"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationSet" xlink:to="mini_ReportingStyleCode" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DocumentTitle" xlink:label="mini_DocumentTitle"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationSet" xlink:to="mini_DocumentTitle" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_BalanceSheetDate" xlink:label="mini_BalanceSheetDate"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationSet" xlink:to="mini_BalanceSheetDate" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_IncomeStatementStartPeriod" xlink:label="mini_IncomeStatementStartPeriod"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationSet" xlink:to="mini_IncomeStatementStartPeriod" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DocumentIdentifier" xlink:label="mini_DocumentIdentifier"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationSet" xlink:to="mini_DocumentIdentifier" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DocumentFiscalPeriodFocus" xlink:label="mini_DocumentFiscalPeriodFocus"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationSet" xlink:to="mini_DocumentFiscalPeriodFocus" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DocumentFiscalYearFocus" xlink:label="mini_DocumentFiscalYearFocus"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_DocumentInformationSet" xlink:to="mini_DocumentFiscalYearFocus" order="7" use="optional"/>
+</presentationLink>
+</link:linkbase>

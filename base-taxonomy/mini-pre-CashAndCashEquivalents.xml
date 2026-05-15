@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#CashAndCashEquivalents' roleURI='https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalents' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalents">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsRollForwardHypercube" xlink:label="mini_CashAndCashEquivalentsRollForwardHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsRollForwardLineItems" xlink:label="mini_CashAndCashEquivalentsRollForwardLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollForwardHypercube" xlink:to="mini_CashAndCashEquivalentsRollForwardLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsRollForward" xlink:label="mini_CashAndCashEquivalentsRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollForwardLineItems" xlink:to="mini_CashAndCashEquivalentsRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_CashAndCashEquivalents" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromCollectionOfReceivables" xlink:label="mini_ProceedsFromCollectionOfReceivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_ProceedsFromCollectionOfReceivables" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentOfAccountsPayable" xlink:label="mini_PaymentOfAccountsPayable"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_PaymentOfAccountsPayable" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentInterest" xlink:label="mini_PaymentInterest"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_PaymentInterest" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromAdditionalLongtermBorrowings" xlink:label="mini_ProceedsFromAdditionalLongtermBorrowings"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_ProceedsFromAdditionalLongtermBorrowings" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForReductionOfLongtermBorrowings" xlink:label="mini_PaymentForReductionOfLongtermBorrowings"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_PaymentForReductionOfLongtermBorrowings" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment" xlink:label="mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProceedsFromInvestmentsByOwner" xlink:label="mini_ProceedsFromInvestmentsByOwner"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_ProceedsFromInvestmentsByOwner" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaymentForDistributionsToOwner" xlink:label="mini_PaymentForDistributionsToOwner"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_PaymentForDistributionsToOwner" order="9" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalents">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsRollForward" xlink:label="mini_CashAndCashEquivalentsRollForward"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="mini_CashAndCashEquivalentsRollForward" xlink:to="mini_CashAndCashEquivalents" order="10" use="optional"/>
+</presentationLink>
+</link:linkbase>

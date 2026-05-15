@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#LongTermDebtDetail' roleURI='https://github.com/seattlemethod/mini/role/level4/LongTermDebtDetail' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/LongTermDebtDetail">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebtSubclassificationsHypercube" xlink:label="mini_LongtermDebtSubclassificationsHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebtSubclassificationsLineItems" xlink:label="mini_LongtermDebtSubclassificationsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LongtermDebtSubclassificationsHypercube" xlink:to="mini_LongtermDebtSubclassificationsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermRollUp" xlink:label="mini_LongtermRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LongtermDebtSubclassificationsLineItems" xlink:to="mini_LongtermRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MortgageLoans" xlink:label="mini_MortgageLoans"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LongtermRollUp" xlink:to="mini_MortgageLoans" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_OtherSecuredLoans" xlink:label="mini_OtherSecuredLoans"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LongtermRollUp" xlink:to="mini_OtherSecuredLoans" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebt" xlink:label="mini_LongtermDebt"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LongtermRollUp" xlink:to="mini_LongtermDebt" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

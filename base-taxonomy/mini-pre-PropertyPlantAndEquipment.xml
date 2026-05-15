@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#PropertyPlantAndEquipment' roleURI='https://github.com/seattlemethod/mini/role/level4/PropertyPlantAndEquipment' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/PropertyPlantAndEquipment">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipmentRollForwardHypercube" xlink:label="mini_PropertyPlantAndEquipmentRollForwardHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipmentRollForwardLineItems" xlink:label="mini_PropertyPlantAndEquipmentRollForwardLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_PropertyPlantAndEquipmentRollForwardHypercube" xlink:to="mini_PropertyPlantAndEquipmentRollForwardLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipmentRollForward" xlink:label="mini_PropertyPlantAndEquipmentRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_PropertyPlantAndEquipmentRollForwardLineItems" xlink:to="mini_PropertyPlantAndEquipmentRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipment" xlink:label="mini_PropertyPlantAndEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="mini_PropertyPlantAndEquipmentRollForward" xlink:to="mini_PropertyPlantAndEquipment" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CapitalAdditionsPropertyPlantAndEquipment" xlink:label="mini_CapitalAdditionsPropertyPlantAndEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_PropertyPlantAndEquipmentRollForward" xlink:to="mini_CapitalAdditionsPropertyPlantAndEquipment" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DecreaseFromDepreciationAndAmortization" xlink:label="mini_DecreaseFromDepreciationAndAmortization"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_PropertyPlantAndEquipmentRollForward" xlink:to="mini_DecreaseFromDepreciationAndAmortization" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipmentWrittenOff" xlink:label="mini_PropertyPlantAndEquipmentWrittenOff"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_PropertyPlantAndEquipmentRollForward" xlink:to="mini_PropertyPlantAndEquipmentWrittenOff" order="4" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/PropertyPlantAndEquipment">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipmentRollForward" xlink:label="mini_PropertyPlantAndEquipmentRollForward"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipment" xlink:label="mini_PropertyPlantAndEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="mini_PropertyPlantAndEquipmentRollForward" xlink:to="mini_PropertyPlantAndEquipment" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

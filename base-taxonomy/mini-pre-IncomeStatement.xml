@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#IncomeStatement' roleURI='https://github.com/seattlemethod/mini/role/level4/IncomeStatement' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/IncomeStatement">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_IncomeStatementHypercube" xlink:label="mini_IncomeStatementHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_IncomeStatementLineItems" xlink:label="mini_IncomeStatementLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_IncomeStatementHypercube" xlink:to="mini_IncomeStatementLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetIncomeLossRollUp" xlink:label="mini_NetIncomeLossRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_IncomeStatementLineItems" xlink:to="mini_NetIncomeLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:label="mini_IncomeLossFromContinuingOperationsBeforeTaxRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NetIncomeLossRollUp" xlink:to="mini_IncomeLossFromContinuingOperationsBeforeTaxRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_OperatingIncomeLossRollUp" xlink:label="mini_OperatingIncomeLossRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="mini_OperatingIncomeLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_GrossProfitRollUp" xlink:label="mini_GrossProfitRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_OperatingIncomeLossRollUp" xlink:to="mini_GrossProfitRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Sales" xlink:label="mini_Sales"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_GrossProfitRollUp" xlink:to="mini_Sales" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CostsOfSales" xlink:label="mini_CostsOfSales"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_GrossProfitRollUp" xlink:to="mini_CostsOfSales" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_GrossProfitLoss" xlink:label="mini_GrossProfitLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_GrossProfitRollUp" xlink:to="mini_GrossProfitLoss" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_OperatingExpensesRollUp" xlink:label="mini_OperatingExpensesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_OperatingIncomeLossRollUp" xlink:to="mini_OperatingExpensesRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_SalesGeneralAndAdministrativeExpenses" xlink:label="mini_SalesGeneralAndAdministrativeExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_OperatingExpensesRollUp" xlink:to="mini_SalesGeneralAndAdministrativeExpenses" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DepreciationAndAmortization" xlink:label="mini_DepreciationAndAmortization"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_OperatingExpensesRollUp" xlink:to="mini_DepreciationAndAmortization" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_OperatingExpenses" xlink:label="mini_OperatingExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_OperatingExpensesRollUp" xlink:to="mini_OperatingExpenses" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_OperatingIncomeLoss" xlink:label="mini_OperatingIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_OperatingIncomeLossRollUp" xlink:to="mini_OperatingIncomeLoss" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NonoperatingIncomeExpensesRollUp" xlink:label="mini_NonoperatingIncomeExpensesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="mini_NonoperatingIncomeExpensesRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_InterestExpense" xlink:label="mini_InterestExpense"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NonoperatingIncomeExpensesRollUp" xlink:to="mini_InterestExpense" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_GainLossOnSalePropertyPlantEquipment" xlink:label="mini_GainLossOnSalePropertyPlantEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NonoperatingIncomeExpensesRollUp" xlink:to="mini_GainLossOnSalePropertyPlantEquipment" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NonoperatingIncomeExpenses" xlink:label="mini_NonoperatingIncomeExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NonoperatingIncomeExpensesRollUp" xlink:to="mini_NonoperatingIncomeExpenses" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_IncomeLossFromContinuingOperationsBeforeTax" xlink:label="mini_IncomeLossFromContinuingOperationsBeforeTax"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="mini_IncomeLossFromContinuingOperationsBeforeTax" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_IncomeTaxExpenseBenefit" xlink:label="mini_IncomeTaxExpenseBenefit"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NetIncomeLossRollUp" xlink:to="mini_IncomeTaxExpenseBenefit" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetIncomeLoss" xlink:label="mini_NetIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NetIncomeLossRollUp" xlink:to="mini_NetIncomeLoss" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

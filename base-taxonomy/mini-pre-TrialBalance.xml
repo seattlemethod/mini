@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#TrialBalance' roleURI='https://github.com/seattlemethod/mini/role/level4/TrialBalance' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/TrialBalance">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_TrialBalanceHypercube" xlink:label="mini_TrialBalanceHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_TrialBalanceLineItems" xlink:label="mini_TrialBalanceLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceHypercube" xlink:to="mini_TrialBalanceLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_TrialBalanceRollUp" xlink:label="mini_TrialBalanceRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceLineItems" xlink:to="mini_TrialBalanceRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_CashAndCashEquivalents" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Receivables" xlink:label="mini_Receivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_Receivables" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Inventories" xlink:label="mini_Inventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_Inventories" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipment" xlink:label="mini_PropertyPlantAndEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_PropertyPlantAndEquipment" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayable" xlink:label="mini_AccountsPayable"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_AccountsPayable" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpenses" xlink:label="mini_AccruedExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_AccruedExpenses" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebt" xlink:label="mini_LongtermDebt"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_LongtermDebt" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapital" xlink:label="mini_PaidInCapital"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_PaidInCapital" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_RetainedEarnings" xlink:label="mini_RetainedEarnings"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_RetainedEarnings" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CheckSum" xlink:label="mini_CheckSum"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_TrialBalanceRollUp" xlink:to="mini_CheckSum" order="10" use="optional"/>
+</presentationLink>
+</link:linkbase>

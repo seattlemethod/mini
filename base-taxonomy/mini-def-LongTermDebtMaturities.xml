@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#LongTermDebtMaturities' roleURI='https://github.com/seattlemethod/mini/role/level4/LongTermDebtMaturities' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/LongTermDebtMaturities" xlink:title="3230 - Disclosure - Long-term Debt Maturities (Level 4 Detail)">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebtMaturitiesLineItems" xlink:label="mini_LongtermDebtMaturitiesLineItems"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebtMaturitiesHypercube" xlink:label="mini_LongtermDebtMaturitiesHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_LongtermDebtMaturitiesHypercube" order="1" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInOneYear" xlink:label="mini_MaturesInOneYear"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_MaturesInOneYear" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInTwoYears" xlink:label="mini_MaturesInTwoYears"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_MaturesInTwoYears" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInThreeYears" xlink:label="mini_MaturesInThreeYears"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_MaturesInThreeYears" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInFourYears" xlink:label="mini_MaturesInFourYears"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_MaturesInFourYears" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInFiveYears" xlink:label="mini_MaturesInFiveYears"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_MaturesInFiveYears" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesThereafter" xlink:label="mini_MaturesThereafter"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_MaturesThereafter" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebt" xlink:label="mini_LongtermDebt"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_LongtermDebtMaturitiesLineItems" xlink:to="mini_LongtermDebt" order="8" use="optional"/>
+</definitionLink>
+</link:linkbase>

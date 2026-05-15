@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#Receivables' roleURI='https://github.com/seattlemethod/mini/role/level4/Receivables' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/Receivables">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ReceivablesRollForwardHypercube" xlink:label="mini_ReceivablesRollForwardHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ReceivablesRollForwardLineItems" xlink:label="mini_ReceivablesRollForwardLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_ReceivablesRollForwardHypercube" xlink:to="mini_ReceivablesRollForwardLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ReceivablesRollForward" xlink:label="mini_ReceivablesRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_ReceivablesRollForwardLineItems" xlink:to="mini_ReceivablesRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Receivables" xlink:label="mini_Receivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="mini_ReceivablesRollForward" xlink:to="mini_Receivables" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_IncreaseInReceivablesFromSalesOnAccount" xlink:label="mini_IncreaseInReceivablesFromSalesOnAccount"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_ReceivablesRollForward" xlink:to="mini_IncreaseInReceivablesFromSalesOnAccount" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CollectionOfReceivables" xlink:label="mini_CollectionOfReceivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_ReceivablesRollForward" xlink:to="mini_CollectionOfReceivables" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AdditionsToAllowanceForBadDebts" xlink:label="mini_AdditionsToAllowanceForBadDebts"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_ReceivablesRollForward" xlink:to="mini_AdditionsToAllowanceForBadDebts" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_BadDebtsWrittenOff" xlink:label="mini_BadDebtsWrittenOff"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="mini_ReceivablesRollForward" xlink:to="mini_BadDebtsWrittenOff" order="5" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/Receivables">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ReceivablesRollForward" xlink:label="mini_ReceivablesRollForward"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Receivables" xlink:label="mini_Receivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="mini_ReceivablesRollForward" xlink:to="mini_Receivables" order="6" use="optional"/>
+</presentationLink>
+</link:linkbase>

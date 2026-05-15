@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#BalanceSheet' roleURI='https://github.com/seattlemethod/mini/role/level4/BalanceSheet' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/BalanceSheet">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_BalanceSheetHypercube" xlink:label="mini_BalanceSheetHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_BalanceSheetLineItems" xlink:label="mini_BalanceSheetLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_BalanceSheetHypercube" xlink:to="mini_BalanceSheetLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AssetsRollUp" xlink:label="mini_AssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_BalanceSheetLineItems" xlink:to="mini_AssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CurrentAssetsRollUp" xlink:label="mini_CurrentAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AssetsRollUp" xlink:to="mini_CurrentAssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CurrentAssetsRollUp" xlink:to="mini_CashAndCashEquivalents" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Receivables" xlink:label="mini_Receivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CurrentAssetsRollUp" xlink:to="mini_Receivables" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Inventories" xlink:label="mini_Inventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CurrentAssetsRollUp" xlink:to="mini_Inventories" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CurrentAssets" xlink:label="mini_CurrentAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CurrentAssetsRollUp" xlink:to="mini_CurrentAssets" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NoncurrentAssetsRollUp" xlink:label="mini_NoncurrentAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AssetsRollUp" xlink:to="mini_NoncurrentAssetsRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipment" xlink:label="mini_PropertyPlantAndEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NoncurrentAssetsRollUp" xlink:to="mini_PropertyPlantAndEquipment" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NoncurrentAssets" xlink:label="mini_NoncurrentAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NoncurrentAssetsRollUp" xlink:to="mini_NoncurrentAssets" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Assets" xlink:label="mini_Assets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AssetsRollUp" xlink:to="mini_Assets" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LiabilitiesAndEquityRollUp" xlink:label="mini_LiabilitiesAndEquityRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_BalanceSheetLineItems" xlink:to="mini_LiabilitiesAndEquityRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LiabilitiesRollUp" xlink:label="mini_LiabilitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LiabilitiesAndEquityRollUp" xlink:to="mini_LiabilitiesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CurrentLiabilitiesRollUp" xlink:label="mini_CurrentLiabilitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LiabilitiesRollUp" xlink:to="mini_CurrentLiabilitiesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayable" xlink:label="mini_AccountsPayable"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CurrentLiabilitiesRollUp" xlink:to="mini_AccountsPayable" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpenses" xlink:label="mini_AccruedExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CurrentLiabilitiesRollUp" xlink:to="mini_AccruedExpenses" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CurrentLiabilities" xlink:label="mini_CurrentLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_CurrentLiabilitiesRollUp" xlink:to="mini_CurrentLiabilities" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NoncurrentLiabilitiesRollUp" xlink:label="mini_NoncurrentLiabilitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LiabilitiesRollUp" xlink:to="mini_NoncurrentLiabilitiesRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebt" xlink:label="mini_LongtermDebt"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NoncurrentLiabilitiesRollUp" xlink:to="mini_LongtermDebt" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NoncurrentLiabilities" xlink:label="mini_NoncurrentLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NoncurrentLiabilitiesRollUp" xlink:to="mini_NoncurrentLiabilities" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Liabilities" xlink:label="mini_Liabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LiabilitiesRollUp" xlink:to="mini_Liabilities" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EquityRollUp" xlink:label="mini_EquityRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LiabilitiesAndEquityRollUp" xlink:to="mini_EquityRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PaidInCapital" xlink:label="mini_PaidInCapital"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_EquityRollUp" xlink:to="mini_PaidInCapital" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_RetainedEarnings" xlink:label="mini_RetainedEarnings"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_EquityRollUp" xlink:to="mini_RetainedEarnings" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Equity" xlink:label="mini_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_EquityRollUp" xlink:to="mini_Equity" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LiabilitiesAndEquity" xlink:label="mini_LiabilitiesAndEquity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_LiabilitiesAndEquityRollUp" xlink:to="mini_LiabilitiesAndEquity" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

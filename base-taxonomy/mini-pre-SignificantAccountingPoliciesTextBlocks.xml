@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#SignificantAccountingPoliciesTextBlocks' roleURI='https://github.com/seattlemethod/mini/role/level2/SignificantAccountingPoliciesTextBlocks' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level2/SignificantAccountingPoliciesTextBlocks">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_SignificantAccountingPoliciesHypercube" xlink:label="mini_SignificantAccountingPoliciesHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_SignificantAccountingPoliciesLineItems" xlink:label="mini_SignificantAccountingPoliciesLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesHypercube" xlink:to="mini_SignificantAccountingPoliciesLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsPoliciesTextBlock" xlink:label="mini_CashAndCashEquivalentsPoliciesTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_CashAndCashEquivalentsPoliciesTextBlock" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ReceivablesPoliciesTextBlock" xlink:label="mini_ReceivablesPoliciesTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_ReceivablesPoliciesTextBlock" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_InventoriesPoliciesTextBlock" xlink:label="mini_InventoriesPoliciesTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_InventoriesPoliciesTextBlock" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipmentPoliciesTextBlock" xlink:label="mini_PropertyPlantAndEquipmentPoliciesTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_PropertyPlantAndEquipmentPoliciesTextBlock" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayablePoliciesTextBlock" xlink:label="mini_AccountsPayablePoliciesTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_AccountsPayablePoliciesTextBlock" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebtPoliciesTextBlock" xlink:label="mini_LongtermDebtPoliciesTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_LongtermDebtPoliciesTextBlock" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_RevenueRecognitionPoliciesTextBlock" xlink:label="mini_RevenueRecognitionPoliciesTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_RevenueRecognitionPoliciesTextBlock" order="7" use="optional"/>
+</presentationLink>
+</link:linkbase>

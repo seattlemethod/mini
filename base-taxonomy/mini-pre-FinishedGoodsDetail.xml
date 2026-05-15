@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/7/2023 12:14:01 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#FinishedGoodsDetail' roleURI='https://github.com/seattlemethod/mini/role/level4/FinishedGoodsDetail' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/FinishedGoodsDetail">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_FinishedGoodsSubclassificationsHypercube" xlink:label="mini_FinishedGoodsSubclassificationsHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_FinishedGoodsSubclassificationsLineItems" xlink:label="mini_FinishedGoodsSubclassificationsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_FinishedGoodsSubclassificationsHypercube" xlink:to="mini_FinishedGoodsSubclassificationsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_FinishedGoodsRollUp" xlink:label="mini_FinishedGoodsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_FinishedGoodsSubclassificationsLineItems" xlink:to="mini_FinishedGoodsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProductAlpha" xlink:label="mini_ProductAlpha"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_FinishedGoodsRollUp" xlink:to="mini_ProductAlpha" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProductBravo" xlink:label="mini_ProductBravo"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_FinishedGoodsRollUp" xlink:to="mini_ProductBravo" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_FinishedGoods" xlink:label="mini_FinishedGoods"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_FinishedGoodsRollUp" xlink:to="mini_FinishedGoods" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

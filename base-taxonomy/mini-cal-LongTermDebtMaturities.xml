@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#LongTermDebtMaturities' roleURI='https://github.com/seattlemethod/mini/role/level4/LongTermDebtMaturities' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/LongTermDebtMaturities">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebt" xlink:label="mini_LongtermDebt"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInOneYear" xlink:label="mini_MaturesInOneYear"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_LongtermDebt" xlink:to="mini_MaturesInOneYear" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInTwoYears" xlink:label="mini_MaturesInTwoYears"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_LongtermDebt" xlink:to="mini_MaturesInTwoYears" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInThreeYears" xlink:label="mini_MaturesInThreeYears"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_LongtermDebt" xlink:to="mini_MaturesInThreeYears" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInFourYears" xlink:label="mini_MaturesInFourYears"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_LongtermDebt" xlink:to="mini_MaturesInFourYears" order="4" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesInFiveYears" xlink:label="mini_MaturesInFiveYears"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_LongtermDebt" xlink:to="mini_MaturesInFiveYears" order="5" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_MaturesThereafter" xlink:label="mini_MaturesThereafter"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_LongtermDebt" xlink:to="mini_MaturesThereafter" order="6" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#ChangesInEquity' roleURI='https://github.com/seattlemethod/mini/role/level4/ChangesInEquity' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/ChangesInEquity">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_StatementOfChangesInEquityHypercube" xlink:label="mini_StatementOfChangesInEquityHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_StatementOfChangesInEquityLineItems" xlink:label="mini_StatementOfChangesInEquityLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_StatementOfChangesInEquityHypercube" xlink:to="mini_StatementOfChangesInEquityLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EquityRollForward" xlink:label="mini_EquityRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_StatementOfChangesInEquityLineItems" xlink:to="mini_EquityRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Equity" xlink:label="mini_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="mini_EquityRollForward" xlink:to="mini_Equity" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_InvestmentsByOwner" xlink:label="mini_InvestmentsByOwner"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_EquityRollForward" xlink:to="mini_InvestmentsByOwner" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DistributionsToOwner" xlink:label="mini_DistributionsToOwner"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_EquityRollForward" xlink:to="mini_DistributionsToOwner" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NetIncomeLoss" xlink:label="mini_NetIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_EquityRollForward" xlink:to="mini_NetIncomeLoss" order="4" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/ChangesInEquity">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EquityRollForward" xlink:label="mini_EquityRollForward"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Equity" xlink:label="mini_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="mini_EquityRollForward" xlink:to="mini_Equity" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

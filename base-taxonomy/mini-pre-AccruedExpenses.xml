@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#AccruedExpenses' roleURI='https://github.com/seattlemethod/mini/role/level4/AccruedExpenses' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/AccruedExpenses">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpensesRollForwardHypercube" xlink:label="mini_AccruedExpensesRollForwardHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpensesRollForwardLineItems" xlink:label="mini_AccruedExpensesRollForwardLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccruedExpensesRollForwardHypercube" xlink:to="mini_AccruedExpensesRollForwardLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpensesRollForward" xlink:label="mini_AccruedExpensesRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccruedExpensesRollForwardLineItems" xlink:to="mini_AccruedExpensesRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpenses" xlink:label="mini_AccruedExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="mini_AccruedExpensesRollForward" xlink:to="mini_AccruedExpenses" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_InterestAccrued" xlink:label="mini_InterestAccrued"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccruedExpensesRollForward" xlink:to="mini_InterestAccrued" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_DecreaseFromPaymentOfInterest" xlink:label="mini_DecreaseFromPaymentOfInterest"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccruedExpensesRollForward" xlink:to="mini_DecreaseFromPaymentOfInterest" order="3" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/AccruedExpenses">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpensesRollForward" xlink:label="mini_AccruedExpensesRollForward"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccruedExpenses" xlink:label="mini_AccruedExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="mini_AccruedExpensesRollForward" xlink:to="mini_AccruedExpenses" order="4" use="optional"/>
+</presentationLink>
+</link:linkbase>

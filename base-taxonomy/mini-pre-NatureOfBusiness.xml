@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#NatureOfBusiness' roleURI='https://github.com/seattlemethod/mini/role/level1/NatureOfBusiness' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level1/NatureOfBusiness">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NatureBusinessHypercube" xlink:label="mini_NatureBusinessHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NatureBusinessLineItems" xlink:label="mini_NatureBusinessLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NatureBusinessHypercube" xlink:to="mini_NatureBusinessLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_NatureBusinessTextBlock" xlink:label="mini_NatureBusinessTextBlock"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_NatureBusinessLineItems" xlink:to="mini_NatureBusinessTextBlock" order="1" use="optional"/>
+</presentationLink>
+</link:linkbase>

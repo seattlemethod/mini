@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#AccountsPayableDetail' roleURI='https://github.com/seattlemethod/mini/role/level4/AccountsPayableDetail' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/AccountsPayableDetail">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayableSubclassificationsHypercube" xlink:label="mini_AccountsPayableSubclassificationsHypercube"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayableSubclassificationsLineItems" xlink:label="mini_AccountsPayableSubclassificationsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccountsPayableSubclassificationsHypercube" xlink:to="mini_AccountsPayableSubclassificationsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayableRollUp" xlink:label="mini_AccountsPayableRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccountsPayableSubclassificationsLineItems" xlink:to="mini_AccountsPayableRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_TradePayables" xlink:label="mini_TradePayables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccountsPayableRollUp" xlink:to="mini_TradePayables" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_OtherPayables" xlink:label="mini_OtherPayables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccountsPayableRollUp" xlink:to="mini_OtherPayables" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayable" xlink:label="mini_AccountsPayable"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="mini_AccountsPayableRollUp" xlink:to="mini_AccountsPayable" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

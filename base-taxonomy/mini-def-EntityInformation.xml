@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/7/2023 12:14:01 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#EntityInformation' roleURI='https://github.com/seattlemethod/mini/role/level4/EntityInformation' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/EntityInformation">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EntityInformationLineItems" xlink:label="mini_EntityInformationLineItems"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EntityInformationSet" xlink:label="mini_EntityInformationSet"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_EntityInformationLineItems" xlink:to="mini_EntityInformationSet" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EconomicEntityName" xlink:label="mini_EconomicEntityName"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_EntityInformationSet" xlink:to="mini_EconomicEntityName" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EconomicEntityIdentifier" xlink:label="mini_EconomicEntityIdentifier"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_EntityInformationSet" xlink:to="mini_EconomicEntityIdentifier" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_EntityInformationHypercube" xlink:label="mini_EntityInformationHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="mini_EntityInformationLineItems" xlink:to="mini_EntityInformationHypercube" order="2" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</definitionLink>
+</link:linkbase>

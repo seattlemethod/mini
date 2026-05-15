@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#CashAndCashEquivalentsDetail' roleURI='https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalentsDetail' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/CashAndCashEquivalentsDetail" xlink:title="3210 - Disclosure - Cash and Cash Equivalents Subclassifications (Level 4 Detail)">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsSubclassificationsLineItems" xlink:label="mini_CashAndCashEquivalentsSubclassificationsLineItems"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsSubclassificationsHypercube" xlink:label="mini_CashAndCashEquivalentsSubclassificationsHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="mini_CashAndCashEquivalentsSubclassificationsLineItems" xlink:to="mini_CashAndCashEquivalentsSubclassificationsHypercube" order="1" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_Cash" xlink:label="mini_Cash"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashAndCashEquivalentsSubclassificationsLineItems" xlink:to="mini_Cash" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashEquivalents" xlink:label="mini_CashEquivalents"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashAndCashEquivalentsSubclassificationsLineItems" xlink:to="mini_CashEquivalents" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalents" xlink:label="mini_CashAndCashEquivalents"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_CashAndCashEquivalentsSubclassificationsLineItems" xlink:to="mini_CashAndCashEquivalents" order="4" use="optional"/>
+</definitionLink>
+</link:linkbase>

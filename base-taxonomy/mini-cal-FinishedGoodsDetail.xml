@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/7/2023 12:14:01 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#FinishedGoodsDetail' roleURI='https://github.com/seattlemethod/mini/role/level4/FinishedGoodsDetail' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level4/FinishedGoodsDetail">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_FinishedGoods" xlink:label="mini_FinishedGoods"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProductAlpha" xlink:label="mini_ProductAlpha"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_FinishedGoods" xlink:to="mini_ProductAlpha" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ProductBravo" xlink:label="mini_ProductBravo"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="mini_FinishedGoods" xlink:to="mini_ProductBravo" order="2" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

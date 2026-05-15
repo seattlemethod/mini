@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/6/2023 7:57:10 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='mini-roles.xsd#SignificantAccountingPoliciesTextBlocks' roleURI='https://github.com/seattlemethod/mini/role/level2/SignificantAccountingPoliciesTextBlocks' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/role/level2/SignificantAccountingPoliciesTextBlocks">
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_SignificantAccountingPoliciesLineItems" xlink:label="mini_SignificantAccountingPoliciesLineItems"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_CashAndCashEquivalentsPoliciesTextBlock" xlink:label="mini_CashAndCashEquivalentsPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_CashAndCashEquivalentsPoliciesTextBlock" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_ReceivablesPoliciesTextBlock" xlink:label="mini_ReceivablesPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_ReceivablesPoliciesTextBlock" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_InventoriesPoliciesTextBlock" xlink:label="mini_InventoriesPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_InventoriesPoliciesTextBlock" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_PropertyPlantAndEquipmentPoliciesTextBlock" xlink:label="mini_PropertyPlantAndEquipmentPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_PropertyPlantAndEquipmentPoliciesTextBlock" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_AccountsPayablePoliciesTextBlock" xlink:label="mini_AccountsPayablePoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_AccountsPayablePoliciesTextBlock" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_LongtermDebtPoliciesTextBlock" xlink:label="mini_LongtermDebtPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_LongtermDebtPoliciesTextBlock" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="mini.xsd#mini_RevenueRecognitionPoliciesTextBlock" xlink:label="mini_RevenueRecognitionPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="mini_SignificantAccountingPoliciesLineItems" xlink:to="mini_RevenueRecognitionPoliciesTextBlock" order="7" use="optional"/>
+</definitionLink>
+</link:linkbase>
