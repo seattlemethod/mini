@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/4/2023 8:31:04 AM -->
+<!-- MINI-BSC-IS01-CF1 -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:fac='https://github.com/seattlemethod/mini/fac'
+
+  xmlns:style='https://github.com/seattlemethod/mini/fac/ReportingStyles/style374'
+  targetNamespace='https://github.com/seattlemethod/mini/fac/ReportingStyles/style374'
+
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>MINI-BSC-IS01-CF1</documentation>
+    <appinfo>
+        <link:linkbaseRef  xlink:href='../rules-mapping/ConceptMap_General_mapping-definition.xml' xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' />
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  <import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+
+  <import namespace='https://github.com/seattlemethod/mini/fac' schemaLocation='../fac.xsd' />
+
+  <import namespace='https://github.com/seattlemethod/mini/fac/ReportingStyles/rf189' schemaLocation='../networks/BSC_schema.xsd' />
+  <import namespace='https://github.com/seattlemethod/mini/fac/ReportingStyles/rf257' schemaLocation='../networks/ISS_schema.xsd' />
+  <import namespace='https://github.com/seattlemethod/mini/fac/ReportingStyles/rf200' schemaLocation='../networks/ISM_schema.xsd' />
+ 
+
+</schema>
