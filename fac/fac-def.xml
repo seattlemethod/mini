@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Definition Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.2.2347 (2007-12-17 12:39).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2023 UBmatrix inc., All Rights Reserved
+Produced on 2023-02-04 07:29:59
+-->
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://xbrl.org/2005/xbrldt http://www.xbrl.org/2005/xbrldt-2005.xsd">
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#BSC" roleURI="https://github.com/seattlemethod/mini/fac/role/BSC" />
+  <arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all" />
+  <arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#BSU" roleURI="https://github.com/seattlemethod/mini/fac/role/BSU" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#ISS" roleURI="https://github.com/seattlemethod/mini/fac/role/ISS" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#ISM" roleURI="https://github.com/seattlemethod/mini/fac/role/ISM" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#IS3" roleURI="https://github.com/seattlemethod/mini/fac/role/IS3" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#CashFlowStatement" roleURI="https://github.com/seattlemethod/mini/fac/role/CashFlowStatement" />
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/BSC" xlink:title="101-Balance Sheet, Classified">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetClassifiedLineItems" xlink:label="fac_BalanceSheetClassifiedLineItems" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetClassifiedTable" xlink:label="fac_BalanceSheetClassifiedTable" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_BalanceSheetClassifiedTable" order="1" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CurrentAssets" xlink:label="fac_CurrentAssets" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_CurrentAssets" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NoncurrentAssets" xlink:label="fac_NoncurrentAssets" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_NoncurrentAssets" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Assets" xlink:label="fac_Assets" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_Assets" order="4" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CurrentLiabilities" xlink:label="fac_CurrentLiabilities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_CurrentLiabilities" order="5" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NoncurrentLiabilities" xlink:label="fac_NoncurrentLiabilities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_NoncurrentLiabilities" order="6" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Liabilities" xlink:label="fac_Liabilities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_Liabilities" order="7" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Equity" xlink:label="fac_Equity" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_Equity" order="8" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_LiabilitiesAndEquity" xlink:label="fac_LiabilitiesAndEquity" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_LiabilitiesAndEquity" order="9" use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/BSU" xlink:title="102-Balance Sheet, Unclassified">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetUnclassifiedLineItems" xlink:label="fac_BalanceSheetUnclassifiedLineItems" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetUnclassifiedTable" xlink:label="fac_BalanceSheetUnclassifiedTable" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_BalanceSheetUnclassifiedLineItems" xlink:to="fac_BalanceSheetUnclassifiedTable" order="1" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Assets" xlink:label="fac_Assets" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetUnclassifiedLineItems" xlink:to="fac_Assets" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Liabilities" xlink:label="fac_Liabilities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetUnclassifiedLineItems" xlink:to="fac_Liabilities" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Equity" xlink:label="fac_Equity" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetUnclassifiedLineItems" xlink:to="fac_Equity" order="4" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_LiabilitiesAndEquity" xlink:label="fac_LiabilitiesAndEquity" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetUnclassifiedLineItems" xlink:to="fac_LiabilitiesAndEquity" order="5" use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/ISS" xlink:title="201-Income Statement, Single Step">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeStatementSingleStepLineItems" xlink:label="fac_IncomeStatementSingleStepLineItems" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeStatementSingleStepTable" xlink:label="fac_IncomeStatementSingleStepTable" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_IncomeStatementSingleStepTable" order="1" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTax" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeTaxExpenseBenefit" xlink:label="fac_IncomeTaxExpenseBenefit" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_IncomeTaxExpenseBenefit" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTax" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTax" order="4" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax" xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" order="5" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_NetIncomeLoss" order="6" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingAndNonoperatingRevenues" xlink:label="fac_OperatingAndNonoperatingRevenues" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_OperatingAndNonoperatingRevenues" order="7" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingAndNonoperatingCostsAndExpenses" xlink:label="fac_OperatingAndNonoperatingCostsAndExpenses" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementSingleStepLineItems" xlink:to="fac_OperatingAndNonoperatingCostsAndExpenses" order="8" use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/ISM">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeStatementMultiStepLineItems" xlink:label="fac_IncomeStatementMultiStepLineItems" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetIncomeLossRollUp" xlink:label="fac_NetIncomeLossRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementMultiStepLineItems" xlink:to="fac_NetIncomeLossRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingIncomeLossRollUp" xlink:label="fac_OperatingIncomeLossRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_OperatingIncomeLossRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_GrossProfitRollUp" xlink:label="fac_GrossProfitRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_GrossProfitRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Revenues" xlink:label="fac_Revenues" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_Revenues" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CostOfRevenue" xlink:label="fac_CostOfRevenue" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_CostOfRevenue" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_GrossProfit" xlink:label="fac_GrossProfit" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_GrossProfit" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingExpenses" xlink:label="fac_OperatingExpenses" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_OperatingExpenses" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingIncomeLoss" xlink:label="fac_OperatingIncomeLoss" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_OperatingIncomeLoss" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NonoperatingIncomeLoss" xlink:label="fac_NonoperatingIncomeLoss" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_NonoperatingIncomeLoss" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTax" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeTaxExpenseBenefit" xlink:label="fac_IncomeTaxExpenseBenefit" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeTaxExpenseBenefit" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTax" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTax" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax" xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_NetIncomeLoss" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeStatementMultiStepTable" xlink:label="fac_IncomeStatementMultiStepTable" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_IncomeStatementMultiStepLineItems" xlink:to="fac_IncomeStatementMultiStepTable" order="2" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+  </definitionLink>
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/IS3">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeStatementMultiStepAlternativeLineItems" xlink:label="fac_IncomeStatementMultiStepAlternativeLineItems" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetIncomeLossRollUp" xlink:label="fac_NetIncomeLossRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementMultiStepAlternativeLineItems" xlink:to="fac_NetIncomeLossRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingIncomeLossRollUp" xlink:label="fac_OperatingIncomeLossRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_OperatingIncomeLossRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Revenues" xlink:label="fac_Revenues" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_Revenues" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CostsAndExpensesRollUp" xlink:label="fac_CostsAndExpensesRollUp" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_CostsAndExpensesRollUp" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CostOfRevenue" xlink:label="fac_CostOfRevenue" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CostsAndExpensesRollUp" xlink:to="fac_CostOfRevenue" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingExpenses" xlink:label="fac_OperatingExpenses" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CostsAndExpensesRollUp" xlink:to="fac_OperatingExpenses" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CostsAndExpenses" xlink:label="fac_CostsAndExpenses" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CostsAndExpensesRollUp" xlink:to="fac_CostsAndExpenses" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_OperatingIncomeLoss" xlink:label="fac_OperatingIncomeLoss" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_OperatingIncomeLoss" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NonoperatingIncomeLoss" xlink:label="fac_NonoperatingIncomeLoss" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_NonoperatingIncomeLoss" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTax" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeTaxExpenseBenefit" xlink:label="fac_IncomeTaxExpenseBenefit" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeTaxExpenseBenefit" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax" xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_NetIncomeLoss" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeStatementMultiStepAlternativeTable" xlink:label="fac_IncomeStatementMultiStepAlternativeTable" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_IncomeStatementMultiStepAlternativeLineItems" xlink:to="fac_IncomeStatementMultiStepAlternativeTable" order="2" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+  </definitionLink>
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/CashFlowStatement" xlink:title="401-Cash Flow Statement">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CashFlowStatementLineItems" xlink:label="fac_CashFlowStatementLineItems" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CashFlowStatementTable" xlink:label="fac_CashFlowStatementTable" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_CashFlowStatementTable" order="1" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlow" xlink:label="fac_NetCashFlow" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlow" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowFromOperatingActivities" xlink:label="fac_NetCashFlowFromOperatingActivities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowFromOperatingActivities" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowFromInvestingActivities" xlink:label="fac_NetCashFlowFromInvestingActivities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowFromInvestingActivities" order="4" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowFromFinancingActivities" xlink:label="fac_NetCashFlowFromFinancingActivities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowFromFinancingActivities" order="5" use="optional" />
+  </definitionLink>
+</linkbase>

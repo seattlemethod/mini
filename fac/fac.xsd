@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fac="https://github.com/seattlemethod/mini/fac" xmlns:generic="http://xbrl.org/2008/generic" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" targetNamespace="https://github.com/seattlemethod/mini/fac" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/GeneralInformation" id="GeneralInformation">
+        <link:definition>FAC-001-General Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/BSC" id="BSC">
+        <link:definition>FAC-101-Balance Sheet, Classified (BSC)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/BSU" id="BSU">
+        <link:definition>FAC-102-Balance Sheet, Unclassified (BSU)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/ISM" id="ISM">
+        <link:definition>FAC-202-Income Statement, Multi Step, (ISM)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/IS3" id="IS3">
+        <link:definition>FAC-203-Income Statement, Multi Step, Alternative (IS3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/ISS" id="ISS">
+        <link:definition>FAC-201-Income Statement, Single Step</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/CashFlowStatement" id="CashFlowStatement">
+        <link:definition>FAC-401-Cash Flow Statement (CF1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/KeyRatios" id="KeyRatios">
+        <link:definition>FAC-601-Key Ratios</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/VR" id="VR">
+        <link:definition>FAC-701-Validation Results</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Reference Links, all" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2004/ref" schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd" />
+  <element id="fac_Assets" name="Assets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" />
+  <element id="fac_AssetsRollUp" name="AssetsRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_BalanceSheetAbstract" name="BalanceSheetAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_BalanceSheetClassifiedLineItems" name="BalanceSheetClassifiedLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_BalanceSheetClassifiedTable" name="BalanceSheetClassifiedTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_BalanceSheetUnclassifiedLineItems" name="BalanceSheetUnclassifiedLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_BalanceSheetUnclassifiedTable" name="BalanceSheetUnclassifiedTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_CashFlowStatementAbstract" name="CashFlowStatementAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_CashFlowStatementLineItems" name="CashFlowStatementLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_CashFlowStatementTable" name="CashFlowStatementTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_CostOfRevenue" name="CostOfRevenue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_CostsAndExpenses" name="CostsAndExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_CostsAndExpensesRollUp" name="CostsAndExpensesRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_CurrentAssets" name="CurrentAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" />
+  <element id="fac_CurrentLiabilities" name="CurrentLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" />
+  <element id="fac_Equity" name="Equity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" />
+  <element id="fac_GrossProfit" name="GrossProfit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_GrossProfitRollUp" name="GrossProfitRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeLossFromContinuingOperationsAfterTax" name="IncomeLossFromContinuingOperationsAfterTax" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" name="IncomeLossFromContinuingOperationsAfterTaxRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeLossFromContinuingOperationsBeforeTax" name="IncomeLossFromContinuingOperationsBeforeTax" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" name="IncomeLossFromContinuingOperationsBeforeTaxRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" name="IncomeLossFromDiscontinuedOperationsNetOfTax" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_IncomeStatementAbstract" name="IncomeStatementAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeStatementMultiStepAlternativeLineItems" name="IncomeStatementMultiStepAlternativeLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeStatementMultiStepAlternativeTable" name="IncomeStatementMultiStepAlternativeTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeStatementMultiStepLineItems" name="IncomeStatementMultiStepLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeStatementMultiStepTable" name="IncomeStatementMultiStepTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeStatementSingleStepLineItems" name="IncomeStatementSingleStepLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeStatementSingleStepTable" name="IncomeStatementSingleStepTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_IncomeTaxExpenseBenefit" name="IncomeTaxExpenseBenefit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_Liabilities" name="Liabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" />
+  <element id="fac_LiabilitiesAndEquity" name="LiabilitiesAndEquity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" />
+  <element id="fac_LiabilitiesEquityRollUp" name="LiabilitiesEquityRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_LiabilitiesRollUp" name="LiabilitiesRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_NetCashFlow" name="NetCashFlow" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_NetCashFlowFromFinancingActivities" name="NetCashFlowFromFinancingActivities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_NetCashFlowFromInvestingActivities" name="NetCashFlowFromInvestingActivities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_NetCashFlowFromOperatingActivities" name="NetCashFlowFromOperatingActivities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_NetCashFlowRollUp" name="NetCashFlowRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_NetIncomeLoss" name="NetIncomeLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_NetIncomeLossRollUp" name="NetIncomeLossRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_NoncurrentAssets" name="NoncurrentAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" />
+  <element id="fac_NoncurrentLiabilities" name="NoncurrentLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" />
+  <element id="fac_NonoperatingIncomeLoss" name="NonoperatingIncomeLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_OperatingAndNonoperatingCostsAndExpenses" name="OperatingAndNonoperatingCostsAndExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_OperatingAndNonoperatingRevenues" name="OperatingAndNonoperatingRevenues" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_OperatingExpenses" name="OperatingExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" />
+  <element id="fac_OperatingIncomeLoss" name="OperatingIncomeLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_OperatingIncomeLossRollUp" name="OperatingIncomeLossRollUp" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_Revenues" name="Revenues" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" />
+  <element id="fac_StatementComprehensiveIncomeAbstract" name="StatementComprehensiveIncomeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_ValidationResultsHierarchy" name="ValidationResultsHierarchy" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_ValidationResultsLineItems" name="ValidationResultsLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_ValidationResultsTable" name="ValidationResultsTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+</schema>
