@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#TrialBalance' roleURI='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_CashAndCashEquivalents' xlink:from='mini_CheckSum' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='mini_CheckSum' xlink:from='cm_Thing' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_Receivables' xlink:from='mini_CheckSum' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_Inventories' xlink:from='mini_CheckSum' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PropertyPlantAndEquipment' xlink:from='mini_CheckSum' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_AccountsPayable' xlink:from='mini_CheckSum' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccruedExpenses' xlink:label='mini_AccruedExpenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_AccruedExpenses' xlink:from='mini_CheckSum' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LongtermDebt' xlink:label='mini_LongtermDebt' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_LongtermDebt' xlink:from='mini_CheckSum' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaidInCapital' xlink:label='mini_PaidInCapital' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PaidInCapital' xlink:from='mini_CheckSum' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/TrialBalance' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CheckSum' xlink:label='mini_CheckSum' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RetainedEarnings' xlink:label='mini_RetainedEarnings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_RetainedEarnings' xlink:from='mini_CheckSum' order='10' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

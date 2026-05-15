@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:type-subtype='https://github.com/seattlemethod/mini/type-subtype'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  targetNamespace='https://github.com/seattlemethod/mini/type-subtype'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='type-subtype-BalanceSheetClassifiedSubclassifications-rules-def.xml'  xlink:title='BalanceSheetClassifiedSubclassifications'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='type-subtype-CashFlowStatement-rules-def.xml'  xlink:title='CashFlowStatement'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='type-subtype-IncomeStatement-rules-def.xml'  xlink:title='IncomeStatement'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='type-subtype-RollForwardChanges-rules-def.xml'  xlink:title='RollForwardChanges'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='type-subtype-TransactionGroups-rules-def.xml'  xlink:title='TransactionGroups'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='type-subtype-TrialBalance-rules-def.xml'  xlink:title='TrialBalance'/>
+
+
+    <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../base-taxonomy/mini-lab.xml' />
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/10/2023 3:10:34 PM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#CashFlowStatement' roleURI='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement'/>
+ 
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass'/>
+ 
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowOperatingActivities' xlink:label='mini_NetCashFlowOperatingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_NetCashFlowOperatingActivities' xlink:from='mini_NetCashFlow' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowOperatingActivities' xlink:label='mini_NetCashFlowOperatingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_ProceedsFromCollectionOfReceivables' xlink:label='mini_ProceedsFromCollectionOfReceivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_ProceedsFromCollectionOfReceivables' xlink:from='mini_NetCashFlowOperatingActivities' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowInvestingActivities' xlink:label='mini_NetCashFlowInvestingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_NetCashFlowInvestingActivities' xlink:from='mini_NetCashFlow' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowOperatingActivities' xlink:label='mini_NetCashFlowOperatingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentOfAccountsPayable' xlink:label='mini_PaymentOfAccountsPayable' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PaymentOfAccountsPayable' xlink:from='mini_NetCashFlowOperatingActivities' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowFinancingActivities' xlink:label='mini_NetCashFlowFinancingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_NetCashFlowFinancingActivities' xlink:from='mini_NetCashFlow' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowFinancingActivities' xlink:label='mini_NetCashFlowFinancingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_ProceedsFromAdditionalLongtermBorrowings' xlink:label='mini_ProceedsFromAdditionalLongtermBorrowings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_ProceedsFromAdditionalLongtermBorrowings' xlink:from='mini_NetCashFlowFinancingActivities' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowFinancingActivities' xlink:label='mini_NetCashFlowFinancingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentForReductionOfLongtermBorrowings' xlink:label='mini_PaymentForReductionOfLongtermBorrowings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PaymentForReductionOfLongtermBorrowings' xlink:from='mini_NetCashFlowFinancingActivities' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowInvestingActivities' xlink:label='mini_NetCashFlowInvestingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment' xlink:label='mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment' xlink:from='mini_NetCashFlowInvestingActivities' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowFinancingActivities' xlink:label='mini_NetCashFlowFinancingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentInterest' xlink:label='mini_PaymentInterest' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PaymentInterest' xlink:from='mini_NetCashFlowFinancingActivities' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowFinancingActivities' xlink:label='mini_NetCashFlowFinancingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_ProceedsFromInvestmentsByOwner' xlink:label='mini_ProceedsFromInvestmentsByOwner' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_ProceedsFromInvestmentsByOwner' xlink:from='mini_NetCashFlowFinancingActivities' order='10' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlowFinancingActivities' xlink:label='mini_NetCashFlowFinancingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentForDistributionsToOwner' xlink:label='mini_PaymentForDistributionsToOwner' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PaymentForDistributionsToOwner' xlink:from='mini_NetCashFlowFinancingActivities' order='11' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/CashFlowStatement' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_NetCashFlow' xlink:from='cm_Thing' order='12' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

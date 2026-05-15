@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/10/2023 3:10:34 PM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#RollForwardChanges' roleURI='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges'/>
+ 
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#instant-inflow' arcroleURI='http://www.xbrl.org/2023/arcrole/instant-inflow'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#instant-outflow' arcroleURI='http://www.xbrl.org/2023/arcrole/instant-outflow'/>
+ 
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_Receivables' xlink:from='cm_Thing' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RetainedEarnings' xlink:label='mini_RetainedEarnings' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NetIncomeLoss' xlink:label='mini_NetIncomeLoss' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_NetIncomeLoss' xlink:from='mini_RetainedEarnings' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LongtermDebt' xlink:label='mini_LongtermDebt' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AdditionalLongtermBorrowings' xlink:label='mini_AdditionalLongtermBorrowings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_AdditionalLongtermBorrowings' xlink:from='mini_LongtermDebt' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PurchasesInventoryForSaleOnAccount' xlink:label='mini_PurchasesInventoryForSaleOnAccount' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_PurchasesInventoryForSaleOnAccount' xlink:from='mini_AccountsPayable' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaidInCapital' xlink:label='mini_PaidInCapital' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_InvestmentsByOwner' xlink:label='mini_InvestmentsByOwner' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_InvestmentsByOwner' xlink:from='mini_PaidInCapital' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_IncreaseInReceivablesFromSalesOnAccount' xlink:label='mini_IncreaseInReceivablesFromSalesOnAccount' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_IncreaseInReceivablesFromSalesOnAccount' xlink:from='mini_Receivables' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_CashAndCashEquivalents' xlink:from='cm_Thing' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_ProceedsFromCollectionOfReceivables' xlink:label='mini_ProceedsFromCollectionOfReceivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_ProceedsFromCollectionOfReceivables' xlink:from='mini_CashAndCashEquivalents' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CapitalAdditionsPropertyPlantAndEquipment' xlink:label='mini_CapitalAdditionsPropertyPlantAndEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_CapitalAdditionsPropertyPlantAndEquipment' xlink:from='mini_PropertyPlantAndEquipment' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PurchasesOfInventoryForSale' xlink:label='mini_PurchasesOfInventoryForSale' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_PurchasesOfInventoryForSale' xlink:from='mini_Inventories' order='10' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaidInCapital' xlink:label='mini_PaidInCapital' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DistributionsToOwner' xlink:label='mini_DistributionsToOwner' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_DistributionsToOwner' xlink:from='mini_PaidInCapital' order='11' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DecreaseFromPaymentAccountsPayable' xlink:label='mini_DecreaseFromPaymentAccountsPayable' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_DecreaseFromPaymentAccountsPayable' xlink:from='mini_AccountsPayable' order='12' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DecreaseInInventoriesFromSales' xlink:label='mini_DecreaseInInventoriesFromSales' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_DecreaseInInventoriesFromSales' xlink:from='mini_Inventories' order='13' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CollectionOfReceivables' xlink:label='mini_CollectionOfReceivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_CollectionOfReceivables' xlink:from='mini_Receivables' order='14' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LongtermDebt' xlink:label='mini_LongtermDebt' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RepaymentLongtermBorrowings' xlink:label='mini_RepaymentLongtermBorrowings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_RepaymentLongtermBorrowings' xlink:from='mini_LongtermDebt' order='15' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DecreaseFromDepreciationAndAmortization' xlink:label='mini_DecreaseFromDepreciationAndAmortization' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_DecreaseFromDepreciationAndAmortization' xlink:from='mini_PropertyPlantAndEquipment' order='16' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentInterest' xlink:label='mini_PaymentInterest' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_PaymentInterest' xlink:from='mini_CashAndCashEquivalents' order='17' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipmentWrittenOff' xlink:label='mini_PropertyPlantAndEquipmentWrittenOff' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_PropertyPlantAndEquipmentWrittenOff' xlink:from='mini_PropertyPlantAndEquipment' order='18' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AdditionsToAllowanceForBadDebts' xlink:label='mini_AdditionsToAllowanceForBadDebts' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_AdditionsToAllowanceForBadDebts' xlink:from='mini_Receivables' order='19' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_InventoryWrittenOff' xlink:label='mini_InventoryWrittenOff' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_InventoryWrittenOff' xlink:from='mini_Inventories' order='20' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentOfAccountsPayable' xlink:label='mini_PaymentOfAccountsPayable' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_PaymentOfAccountsPayable' xlink:from='mini_CashAndCashEquivalents' order='21' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_ProceedsFromAdditionalLongtermBorrowings' xlink:label='mini_ProceedsFromAdditionalLongtermBorrowings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_ProceedsFromAdditionalLongtermBorrowings' xlink:from='mini_CashAndCashEquivalents' order='22' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_Inventories' xlink:from='cm_Thing' order='23' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_BadDebtsWrittenOff' xlink:label='mini_BadDebtsWrittenOff' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_BadDebtsWrittenOff' xlink:from='mini_Receivables' order='24' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentForReductionOfLongtermBorrowings' xlink:label='mini_PaymentForReductionOfLongtermBorrowings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_PaymentForReductionOfLongtermBorrowings' xlink:from='mini_CashAndCashEquivalents' order='25' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment' xlink:label='mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_PaymentForCapitalAdditionsOfPropertyPlantEquipment' xlink:from='mini_CashAndCashEquivalents' order='26' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_ProceedsFromInvestmentsByOwner' xlink:label='mini_ProceedsFromInvestmentsByOwner' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_ProceedsFromInvestmentsByOwner' xlink:from='mini_CashAndCashEquivalents' order='27' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaymentForDistributionsToOwner' xlink:label='mini_PaymentForDistributionsToOwner' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_PaymentForDistributionsToOwner' xlink:from='mini_CashAndCashEquivalents' order='28' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_PropertyPlantAndEquipment' xlink:from='cm_Thing' order='29' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_AccountsPayable' xlink:from='cm_Thing' order='30' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LongtermDebt' xlink:label='mini_LongtermDebt' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_LongtermDebt' xlink:from='cm_Thing' order='31' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaidInCapital' xlink:label='mini_PaidInCapital' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_PaidInCapital' xlink:from='cm_Thing' order='32' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RetainedEarnings' xlink:label='mini_RetainedEarnings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_RetainedEarnings' xlink:from='cm_Thing' order='33' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccruedExpenses' xlink:label='mini_AccruedExpenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_AccruedExpenses' xlink:from='cm_Thing' order='34' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccruedExpenses' xlink:label='mini_AccruedExpenses' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_InterestAccrued' xlink:label='mini_InterestAccrued' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-inflow' xlink:to='mini_InterestAccrued' xlink:from='mini_AccruedExpenses' order='35' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/RollForwardChanges' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccruedExpenses' xlink:label='mini_AccruedExpenses' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DecreaseFromPaymentOfInterest' xlink:label='mini_DecreaseFromPaymentOfInterest' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/instant-outflow' xlink:to='mini_DecreaseFromPaymentOfInterest' xlink:from='mini_AccruedExpenses' order='36' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

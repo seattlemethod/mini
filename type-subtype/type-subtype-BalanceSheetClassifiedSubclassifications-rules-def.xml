@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/10/2023 3:10:34 PM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#BalanceSheetClassifiedSubclassifications' roleURI='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications'/>
+ 
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass'/>
+ 
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LiabilitiesAndEquity' xlink:label='mini_LiabilitiesAndEquity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Liabilities' xlink:label='mini_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_Liabilities' xlink:from='mini_LiabilitiesAndEquity' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Assets' xlink:label='mini_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_Assets' xlink:from='cm_Thing' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Assets' xlink:label='mini_Assets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CurrentAssets' xlink:label='mini_CurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_CurrentAssets' xlink:from='mini_Assets' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LiabilitiesAndEquity' xlink:label='mini_LiabilitiesAndEquity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2023/arcrole/class-subclass' xlink:to='mini_LiabilitiesAndEquity' xlink:from='cm_Thing' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LiabilitiesAndEquity' xlink:label='mini_LiabilitiesAndEquity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Equity' xlink:label='mini_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_Equity' xlink:from='mini_LiabilitiesAndEquity' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CurrentAssets' xlink:label='mini_CurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_CashAndCashEquivalents' xlink:from='mini_CurrentAssets' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CurrentAssets' xlink:label='mini_CurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_Receivables' xlink:from='mini_CurrentAssets' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CurrentAssets' xlink:label='mini_CurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_Inventories' xlink:from='mini_CurrentAssets' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Assets' xlink:label='mini_Assets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NoncurrentAssets' xlink:label='mini_NoncurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_NoncurrentAssets' xlink:from='mini_Assets' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NoncurrentAssets' xlink:label='mini_NoncurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PropertyPlantAndEquipment' xlink:label='mini_PropertyPlantAndEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PropertyPlantAndEquipment' xlink:from='mini_NoncurrentAssets' order='10' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Liabilities' xlink:label='mini_Liabilities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CurrentLiabilities' xlink:label='mini_CurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_CurrentLiabilities' xlink:from='mini_Liabilities' order='11' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CurrentLiabilities' xlink:label='mini_CurrentLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccountsPayable' xlink:label='mini_AccountsPayable' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_AccountsPayable' xlink:from='mini_CurrentLiabilities' order='12' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CurrentLiabilities' xlink:label='mini_CurrentLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_AccruedExpenses' xlink:label='mini_AccruedExpenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_AccruedExpenses' xlink:from='mini_CurrentLiabilities' order='13' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Liabilities' xlink:label='mini_Liabilities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NoncurrentLiabilities' xlink:label='mini_NoncurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_NoncurrentLiabilities' xlink:from='mini_Liabilities' order='14' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NoncurrentLiabilities' xlink:label='mini_NoncurrentLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_LongtermDebt' xlink:label='mini_LongtermDebt' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_LongtermDebt' xlink:from='mini_NoncurrentLiabilities' order='15' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Equity' xlink:label='mini_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RetainedEarnings' xlink:label='mini_RetainedEarnings' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_RetainedEarnings' xlink:from='mini_Equity' order='16' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Equity' xlink:label='mini_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_PaidInCapital' xlink:label='mini_PaidInCapital' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_PaidInCapital' xlink:from='mini_Equity' order='17' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Cash' xlink:label='mini_Cash' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_Cash' xlink:from='mini_CashAndCashEquivalents' order='18' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashAndCashEquivalents' xlink:label='mini_CashAndCashEquivalents' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_CashEquivalents' xlink:label='mini_CashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_CashEquivalents' xlink:from='mini_CashAndCashEquivalents' order='19' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_TradeReceivables' xlink:label='mini_TradeReceivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_TradeReceivables' xlink:from='mini_Receivables' order='20' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Receivables' xlink:label='mini_Receivables' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_OtherReceivables' xlink:label='mini_OtherReceivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_OtherReceivables' xlink:from='mini_Receivables' order='21' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_FinishedGoods' xlink:label='mini_FinishedGoods' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_FinishedGoods' xlink:from='mini_Inventories' order='22' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_WorkInProgress' xlink:label='mini_WorkInProgress' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_WorkInProgress' xlink:from='mini_Inventories' order='23' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/type-subtype/elr/TypeOrClassRelations/role/BalanceSheetClassifiedSubclassifications' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_Inventories' xlink:label='mini_Inventories' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_RawMaterial' xlink:label='mini_RawMaterial' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='mini_RawMaterial' xlink:from='mini_Inventories' order='24' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>
