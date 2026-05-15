@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created by Charles Hoffman, CPA: 2/4/2023 -->
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'><arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all"/>
+<arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"/>
+<roleRef xlink:type='simple' xlink:href='../fac.xsd#ISM' roleURI='https://github.com/seattlemethod/mini/fac/role/ISM' /><presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/ISM">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementMultiStepTable" xlink:label="fac_IncomeStatementMultiStepTable"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementMultiStepLineItems" xlink:label="fac_IncomeStatementMultiStepLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeStatementMultiStepTable" xlink:to="fac_IncomeStatementMultiStepLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLossRollUp" xlink:label="fac_NetIncomeLossRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeStatementMultiStepLineItems" xlink:to="fac_NetIncomeLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingIncomeLossRollUp" xlink:label="fac_OperatingIncomeLossRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_OperatingIncomeLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GrossProfitRollUp" xlink:label="fac_GrossProfitRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_GrossProfitRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Revenues" xlink:label="fac_Revenues"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_Revenues" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CostOfRevenue" xlink:label="fac_CostOfRevenue"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_CostOfRevenue" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GrossProfit" xlink:label="fac_GrossProfit"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_GrossProfit" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingExpenses" xlink:label="fac_OperatingExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_OperatingExpenses" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingIncomeLoss" xlink:label="fac_OperatingIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_OperatingIncomeLoss" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NonoperatingIncomeLoss" xlink:label="fac_NonoperatingIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_NonoperatingIncomeLoss" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTax" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeTaxExpenseBenefit" xlink:label="fac_IncomeTaxExpenseBenefit"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeTaxExpenseBenefit" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTax" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTax"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTax" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax" xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_NetIncomeLoss" order="3" use="optional"/>
+</presentationLink><calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/ISM">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTax" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTax"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetIncomeLoss" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTax" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTax" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTax" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingIncomeLoss" xlink:label="fac_OperatingIncomeLoss"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:to="fac_OperatingIncomeLoss" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GrossProfit" xlink:label="fac_GrossProfit"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_OperatingIncomeLoss" xlink:to="fac_GrossProfit" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Revenues" xlink:label="fac_Revenues"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_GrossProfit" xlink:to="fac_Revenues" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CostOfRevenue" xlink:label="fac_CostOfRevenue"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_GrossProfit" xlink:to="fac_CostOfRevenue" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingExpenses" xlink:label="fac_OperatingExpenses"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_OperatingIncomeLoss" xlink:to="fac_OperatingExpenses" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NonoperatingIncomeLoss" xlink:label="fac_NonoperatingIncomeLoss"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:to="fac_NonoperatingIncomeLoss" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeTaxExpenseBenefit" xlink:label="fac_IncomeTaxExpenseBenefit"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTax" xlink:to="fac_IncomeTaxExpenseBenefit" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax" xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetIncomeLoss" xlink:to="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" order="2" weight="1" use="optional"/>
+</calculationLink><definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/mini/fac/role/ISM">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementMultiStepLineItems" xlink:label="fac_IncomeStatementMultiStepLineItems"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLossRollUp" xlink:label="fac_NetIncomeLossRollUp"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementMultiStepLineItems" xlink:to="fac_NetIncomeLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingIncomeLossRollUp" xlink:label="fac_OperatingIncomeLossRollUp"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_OperatingIncomeLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GrossProfitRollUp" xlink:label="fac_GrossProfitRollUp"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_GrossProfitRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Revenues" xlink:label="fac_Revenues"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_Revenues" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CostOfRevenue" xlink:label="fac_CostOfRevenue"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_CostOfRevenue" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GrossProfit" xlink:label="fac_GrossProfit"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GrossProfitRollUp" xlink:to="fac_GrossProfit" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingExpenses" xlink:label="fac_OperatingExpenses"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_OperatingExpenses" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_OperatingIncomeLoss" xlink:label="fac_OperatingIncomeLoss"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_OperatingIncomeLossRollUp" xlink:to="fac_OperatingIncomeLoss" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NonoperatingIncomeLoss" xlink:label="fac_NonoperatingIncomeLoss"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_NonoperatingIncomeLoss" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax" xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTax" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeTaxExpenseBenefit" xlink:label="fac_IncomeTaxExpenseBenefit"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeTaxExpenseBenefit" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTax" xlink:label="fac_IncomeLossFromContinuingOperationsAfterTax"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeLossFromContinuingOperationsAfterTaxRollUp" xlink:to="fac_IncomeLossFromContinuingOperationsAfterTax" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax" xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_IncomeLossFromDiscontinuedOperationsNetOfTax" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_NetIncomeLoss" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementMultiStepTable" xlink:label="fac_IncomeStatementMultiStepTable"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_IncomeStatementMultiStepLineItems" xlink:to="fac_IncomeStatementMultiStepTable" order="2" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</definitionLink></linkbase>
