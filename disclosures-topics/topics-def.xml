@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/13/2023 12:22:45 PM -->
+<?auditchain name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?auditchain name='CreationDateTime' value='2/13/2023 12:22:45 PM'?>
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='topics.xsd#Topics' roleURI='https://github.com/seattlemethod/mini/topics/role/Topics'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#heading-topic' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#heading-heading' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/heading-heading'/>
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FaceStatements' xlink:label='topics_FaceStatements' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_FaceStatements' xlink:from='topics_ComponentsOfFinancialReport' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FaceStatements' xlink:label='topics_FaceStatements' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfFinancialPosition' xlink:label='topics_StatementOfFinancialPosition' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_StatementOfFinancialPosition' xlink:from='topics_FaceStatements' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FaceStatements' xlink:label='topics_FaceStatements' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfOperations' xlink:label='topics_StatementOfOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_StatementOfOperations' xlink:from='topics_FaceStatements' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FaceStatements' xlink:label='topics_FaceStatements' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfChangesInEquity' xlink:label='topics_StatementOfChangesInEquity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_StatementOfChangesInEquity' xlink:from='topics_FaceStatements' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FaceStatements' xlink:label='topics_FaceStatements' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfCashFlow' xlink:label='topics_StatementOfCashFlow' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_StatementOfCashFlow' xlink:from='topics_FaceStatements' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_NatureOfEconomicEntity' xlink:label='topics_NatureOfEconomicEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_NatureOfEconomicEntity' xlink:from='topics_ComponentsOfFinancialReport' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_BasisOfReporting' xlink:label='topics_BasisOfReporting' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_BasisOfReporting' xlink:from='topics_ComponentsOfFinancialReport' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_SummaryOfSignificantAccountingPolicies' xlink:label='topics_SummaryOfSignificantAccountingPolicies' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_SummaryOfSignificantAccountingPolicies' xlink:from='topics_ComponentsOfFinancialReport' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_FinancialAccounts' xlink:from='topics_ComponentsOfFinancialReport' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_BroadTransactions' xlink:label='topics_BroadTransactions' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_BroadTransactions' xlink:from='topics_ComponentsOfFinancialReport' order='10' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_PropertyPlantAndEquipment' xlink:label='topics_PropertyPlantAndEquipment' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_PropertyPlantAndEquipment' xlink:from='topics_FinancialAccounts' order='11' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_Inventories' xlink:label='topics_Inventories' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_Inventories' xlink:from='topics_FinancialAccounts' order='12' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_CashAndCashEquivalents' xlink:label='topics_CashAndCashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_CashAndCashEquivalents' xlink:from='topics_FinancialAccounts' order='13' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_Revenue' xlink:label='topics_Revenue' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_Revenue' xlink:from='topics_FinancialAccounts' order='14' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_Equity' xlink:label='topics_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_Equity' xlink:from='topics_FinancialAccounts' order='15' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_BroadTransactions' xlink:label='topics_BroadTransactions' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_CashFlowSupplementalInformation' xlink:label='topics_CashFlowSupplementalInformation' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_CashFlowSupplementalInformation' xlink:from='topics_BroadTransactions' order='16' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_IncomeTaxes' xlink:label='topics_IncomeTaxes' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_IncomeTaxes' xlink:from='topics_FinancialAccounts' order='17' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_DocumentAndEntityInformation' xlink:label='topics_DocumentAndEntityInformation' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_DocumentAndEntityInformation' xlink:from='topics_ComponentsOfFinancialReport' order='18' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_NatureOfEconomicEntity' xlink:label='topics_NatureOfEconomicEntity' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_NatureOfOperations' xlink:label='topics_NatureOfOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_NatureOfOperations' xlink:from='topics_NatureOfEconomicEntity' order='19' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_Receivables' xlink:label='topics_Receivables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_Receivables' xlink:from='topics_FinancialAccounts' order='20' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_Debt' xlink:label='topics_Debt' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_Debt' xlink:from='topics_FinancialAccounts' order='21' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_Payables' xlink:label='topics_Payables' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_Payables' xlink:from='topics_FinancialAccounts' order='22' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_BasisOfReporting' xlink:label='topics_BasisOfReporting' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_BasisOfPresentation' xlink:label='topics_BasisOfPresentation' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_BasisOfPresentation' xlink:from='topics_BasisOfReporting' order='23' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/topics/role/Topics'>
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_BroadTransactions' xlink:label='topics_BroadTransactions' />
+      <link:loc xlink:type='locator' xlink:href='topics.xsd#topics_RelatedPartyTransactions' xlink:label='topics_RelatedPartyTransactions' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/heading-topic' xlink:to='topics_RelatedPartyTransactions' xlink:from='topics_BroadTransactions' order='24' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

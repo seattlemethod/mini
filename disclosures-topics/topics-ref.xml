@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/13/2023 12:22:45 PM -->
+<?auditchain name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?auditchain name='CreationDateTime' value='2/13/2023 12:22:45 PM'?>
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ref='http://www.xbrl.org/2004/ref' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://www.xbrl.org/2004/ref http://www.xbrl.org/2004/ref-2004-08-10.xsd'>
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_BasisOfPresentation' xlink:label='topics_BasisOfPresentation' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_BasisOfPresentation' xlink:to='topics_BasisOfPresentation_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_BasisOfPresentation_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>9</ref:Chapter>
+       <ref:Paragraph>.32</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_BasisOfReporting' xlink:label='topics_BasisOfReporting' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_BasisOfReporting' xlink:to='topics_BasisOfReporting_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_BasisOfReporting_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>2</ref:Chapter>
+       <ref:Paragraph>.03-.06</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_BroadTransactions' xlink:label='topics_BroadTransactions' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_BroadTransactions' xlink:to='topics_BroadTransactions_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_BroadTransactions_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>2</ref:Chapter>
+       <ref:Paragraph>.20-.26</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_CashAndCashEquivalents' xlink:label='topics_CashAndCashEquivalents' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_CashAndCashEquivalents' xlink:to='topics_CashAndCashEquivalents_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_CashAndCashEquivalents_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>8</ref:Chapter>
+       <ref:Paragraph>.05-.10</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_CashFlowSupplementalInformation' xlink:label='topics_CashFlowSupplementalInformation' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_CashFlowSupplementalInformation' xlink:to='topics_CashFlowSupplementalInformation_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_CashFlowSupplementalInformation_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>8</ref:Chapter>
+       <ref:Paragraph>.36</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_ComponentsOfFinancialReport' xlink:label='topics_ComponentsOfFinancialReport' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_ComponentsOfFinancialReport' xlink:to='topics_ComponentsOfFinancialReport_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_ComponentsOfFinancialReport_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>1</ref:Chapter>
+       <ref:Paragraph>.01-.46</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_Debt' xlink:label='topics_Debt' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_Debt' xlink:to='topics_Debt_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_Debt_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>5</ref:Chapter>
+       <ref:Paragraph>.10-.12</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_DocumentAndEntityInformation' xlink:label='topics_DocumentAndEntityInformation' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_DocumentAndEntityInformation' xlink:to='topics_DocumentAndEntityInformation_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_DocumentAndEntityInformation_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter></ref:Chapter>
+       <ref:Paragraph></ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_Equity' xlink:label='topics_Equity' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_Equity' xlink:to='topics_Equity_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_Equity_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>18</ref:Chapter>
+       <ref:Paragraph>.38-.40</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_FaceStatements' xlink:label='topics_FaceStatements' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_FaceStatements' xlink:to='topics_FaceStatements_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_FaceStatements_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>2</ref:Chapter>
+       <ref:Paragraph>.10-.15</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_FinancialAccounts' xlink:label='topics_FinancialAccounts' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_FinancialAccounts' xlink:to='topics_FinancialAccounts_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_FinancialAccounts_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>1</ref:Chapter>
+       <ref:Paragraph>.01-.46</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_IncomeTaxes' xlink:label='topics_IncomeTaxes' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_IncomeTaxes' xlink:to='topics_IncomeTaxes_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_IncomeTaxes_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>21</ref:Chapter>
+       <ref:Paragraph>.60-.66</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_Inventories' xlink:label='topics_Inventories' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_Inventories' xlink:to='topics_Inventories_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_Inventories_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>12</ref:Chapter>
+       <ref:Paragraph>.28-.32</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_NatureOfEconomicEntity' xlink:label='topics_NatureOfEconomicEntity' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_NatureOfEconomicEntity' xlink:to='topics_NatureOfEconomicEntity_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_NatureOfEconomicEntity_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>10</ref:Chapter>
+       <ref:Paragraph>.02</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_NatureOfOperations' xlink:label='topics_NatureOfOperations' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_NatureOfOperations' xlink:to='topics_NatureOfOperations_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_NatureOfOperations_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>10</ref:Chapter>
+       <ref:Paragraph>.02</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_Payables' xlink:label='topics_Payables' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_Payables' xlink:to='topics_Payables_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_Payables_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>6</ref:Chapter>
+       <ref:Paragraph>.15-.20</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_PropertyPlantAndEquipment' xlink:label='topics_PropertyPlantAndEquipment' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_PropertyPlantAndEquipment' xlink:to='topics_PropertyPlantAndEquipment_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_PropertyPlantAndEquipment_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>14</ref:Chapter>
+       <ref:Paragraph>.21-.26</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_Receivables' xlink:label='topics_Receivables' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_Receivables' xlink:to='topics_Receivables_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_Receivables_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>4</ref:Chapter>
+       <ref:Paragraph>.03</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_RelatedPartyTransactions' xlink:label='topics_RelatedPartyTransactions' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_RelatedPartyTransactions' xlink:to='topics_RelatedPartyTransactions_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_RelatedPartyTransactions_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>2</ref:Chapter>
+       <ref:Paragraph>.20-.26</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_Revenue' xlink:label='topics_Revenue' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_Revenue' xlink:to='topics_Revenue_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_Revenue_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>19</ref:Chapter>
+       <ref:Paragraph>.26-.33</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfCashFlow' xlink:label='topics_StatementOfCashFlow' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_StatementOfCashFlow' xlink:to='topics_StatementOfCashFlow_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_StatementOfCashFlow_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>8</ref:Chapter>
+       <ref:Paragraph>.01-.40</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfChangesInEquity' xlink:label='topics_StatementOfChangesInEquity' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_StatementOfChangesInEquity' xlink:to='topics_StatementOfChangesInEquity_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_StatementOfChangesInEquity_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>2</ref:Chapter>
+       <ref:Paragraph>.11</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfFinancialPosition' xlink:label='topics_StatementOfFinancialPosition' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_StatementOfFinancialPosition' xlink:to='topics_StatementOfFinancialPosition_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_StatementOfFinancialPosition_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>4</ref:Chapter>
+       <ref:Paragraph>.01-.06</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_StatementOfOperations' xlink:label='topics_StatementOfOperations' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_StatementOfOperations' xlink:to='topics_StatementOfOperations_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_StatementOfOperations_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>7</ref:Chapter>
+       <ref:Paragraph>.01-.04</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+    <loc xlink:type='locator' xlink:href='topics.xsd#topics_SummaryOfSignificantAccountingPolicies' xlink:label='topics_SummaryOfSignificantAccountingPolicies' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='topics_SummaryOfSignificantAccountingPolicies' xlink:to='topics_SummaryOfSignificantAccountingPolicies_lbl' />
+    <reference xlink:type='resource' xlink:label='topics_SummaryOfSignificantAccountingPolicies_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>MASB</ref:Publisher>
+       <ref:Chapter>2</ref:Chapter>
+       <ref:Paragraph>.18-.19</ref:Paragraph>
+       <ref:URI>../documentation/documentation.pdf</ref:URI>
+    </reference>
+ 
+  </referenceLink>
+</linkbase>
