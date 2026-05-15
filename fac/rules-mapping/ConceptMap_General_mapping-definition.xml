@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Mapping Table: ConceptMap_General -->
+<!-- Created by Charles Hoffman, CPA 2/4/2023 8:31:07 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-equivalentClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass'/>
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Assets' xlink:label='fac_Assets' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_Assets' xlink:label='mini_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_Assets' xlink:to='mini_Assets' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CostOfRevenue' xlink:label='fac_CostOfRevenue' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_CostsOfSales' xlink:label='mini_CostsOfSales' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_CostOfRevenue' xlink:to='mini_CostsOfSales' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CurrentAssets' xlink:label='fac_CurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_CurrentAssets' xlink:label='mini_CurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_CurrentAssets' xlink:to='mini_CurrentAssets' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CurrentLiabilities' xlink:label='fac_CurrentLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_CurrentLiabilities' xlink:label='mini_CurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_CurrentLiabilities' xlink:to='mini_CurrentLiabilities' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Equity' xlink:label='fac_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_Equity' xlink:label='mini_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_Equity' xlink:to='mini_Equity' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_GrossProfit' xlink:label='fac_GrossProfit' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_GrossProfitLoss' xlink:label='mini_GrossProfitLoss' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_GrossProfit' xlink:to='mini_GrossProfitLoss' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax' xlink:label='fac_IncomeLossFromContinuingOperationsBeforeTax' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_IncomeLossFromContinuingOperationsBeforeTax' xlink:label='mini_IncomeLossFromContinuingOperationsBeforeTax' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_IncomeLossFromContinuingOperationsBeforeTax' xlink:to='mini_IncomeLossFromContinuingOperationsBeforeTax' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_IncomeTaxExpenseBenefit' xlink:label='fac_IncomeTaxExpenseBenefit' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_IncomeTaxExpenseBenefit' xlink:label='mini_IncomeTaxExpenseBenefit' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_IncomeTaxExpenseBenefit' xlink:to='mini_IncomeTaxExpenseBenefit' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Liabilities' xlink:label='fac_Liabilities' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_Liabilities' xlink:label='mini_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_Liabilities' xlink:to='mini_Liabilities' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_LiabilitiesAndEquity' xlink:label='fac_LiabilitiesAndEquity' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_LiabilitiesAndEquity' xlink:label='mini_LiabilitiesAndEquity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_LiabilitiesAndEquity' xlink:to='mini_LiabilitiesAndEquity' order='9.5' use='optional' />
+   </link:definitionLink>
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlow' xlink:label='fac_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NetCashFlow' xlink:label='mini_NetCashFlow' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlow' xlink:to='mini_NetCashFlow' order='10' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromFinancingActivities' xlink:label='fac_NetCashFlowFromFinancingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NetCashFlowFinancingActivities' xlink:label='mini_NetCashFlowFinancingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromFinancingActivities' xlink:to='mini_NetCashFlowFinancingActivities' order='11' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromInvestingActivities' xlink:label='fac_NetCashFlowFromInvestingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NetCashFlowInvestingActivities' xlink:label='mini_NetCashFlowInvestingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromInvestingActivities' xlink:to='mini_NetCashFlowInvestingActivities' order='12' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromOperatingActivities' xlink:label='fac_NetCashFlowFromOperatingActivities' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NetCashFlowOperatingActivities' xlink:label='mini_NetCashFlowOperatingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromOperatingActivities' xlink:to='mini_NetCashFlowOperatingActivities' order='13' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetIncomeLoss' xlink:label='fac_NetIncomeLoss' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NetIncomeLoss' xlink:label='mini_NetIncomeLoss' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NetIncomeLoss' xlink:to='mini_NetIncomeLoss' order='14' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NoncurrentAssets' xlink:label='fac_NoncurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NoncurrentAssets' xlink:label='mini_NoncurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NoncurrentAssets' xlink:to='mini_NoncurrentAssets' order='15' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NoncurrentLiabilities' xlink:label='fac_NoncurrentLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NoncurrentLiabilities' xlink:label='mini_NoncurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NoncurrentLiabilities' xlink:to='mini_NoncurrentLiabilities' order='16' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NonoperatingIncomeLoss' xlink:label='fac_NonoperatingIncomeLoss' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_NonoperatingIncomeExpenses' xlink:label='mini_NonoperatingIncomeExpenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_NonoperatingIncomeLoss' xlink:to='mini_NonoperatingIncomeExpenses' order='17' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingExpenses' xlink:label='fac_OperatingExpenses' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_OperatingExpenses' xlink:label='mini_OperatingExpenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_OperatingExpenses' xlink:to='mini_OperatingExpenses' order='18' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingIncomeLoss' xlink:label='fac_OperatingIncomeLoss' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_OperatingIncomeLoss' xlink:label='mini_OperatingIncomeLoss' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_OperatingIncomeLoss' xlink:to='mini_OperatingIncomeLoss' order='19' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='../../base-taxonomy/mini.xsd#mini_Sales' xlink:label='mini_Sales' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='mini_Sales' order='20' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>
