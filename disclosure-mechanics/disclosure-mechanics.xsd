@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/19/2023 8:33:00 AM -->
+<?auditchain name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?auditchain name='CreationDateTime' value='4/19/2023 8:33:00 AM'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:dm='https://github.com/seattlemethod/mini/dm'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  targetNamespace='https://github.com/seattlemethod/mini/dm'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1355-rules-def.xml'  xlink:title='BalanceSheetClassified'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1357-rules-def.xml'  xlink:title='IncomeStatement'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1359-rules-def.xml'  xlink:title='StatementOfChangesInEquity'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1360-rules-def.xml'  xlink:title='CashFlowStatementDirectMethod'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1361-rules-def.xml'  xlink:title='NatureOfEntity'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1362-rules-def.xml'  xlink:title='BasisOfPresentation'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1364-rules-def.xml'  xlink:title='CashAndCashEquivalentsSubclassifications'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1365-rules-def.xml'  xlink:title='InventoriesSubclassifications'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1368-rules-def.xml'  xlink:title='PropertyPlantAndEquipmentNetSubclassifications'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1369-rules-def.xml'  xlink:title='PropertyPlantAndEquipmentNetRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1373-rules-def.xml'  xlink:title='LongTermDebtMaturities'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1374-rules-def.xml'  xlink:title='LongTermDebtSubclassifications'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1384-rules-def.xml'  xlink:title='AssetsRollUp'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1385-rules-def.xml'  xlink:title='LiabilitiesAndEquityRollUp'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1391-rules-def.xml'  xlink:title='NetCashFlowRollUp'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1392-rules-def.xml'  xlink:title='CashAndCashEquivalentsSummaryRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1393-rules-def.xml'  xlink:title='CashAndCashEquivalentsRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1394-rules-def.xml'  xlink:title='ReceivablesRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1395-rules-def.xml'  xlink:title='ReceivablesSubclassifications'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1396-rules-def.xml'  xlink:title='InventoriesRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1397-rules-def.xml'  xlink:title='AccountsPayableRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1398-rules-def.xml'  xlink:title='AccountsPayableSubclassifications'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1399-rules-def.xml'  xlink:title='LongTermDebtRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1401-rules-def.xml'  xlink:title='TrialBalance'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1402-rules-def.xml'  xlink:title='TransactionsGroupings'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1403-rules-def.xml'  xlink:title='RetainedEarningsRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1404-rules-def.xml'  xlink:title='PaidInCapitalRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1405-rules-def.xml'  xlink:title='AccruedExpensesRollForward'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1406-rules-def.xml'  xlink:title='CashAndCashEquivalentsPolicy'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1407-rules-def.xml'  xlink:title='ReceivablesPolicies'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1408-rules-def.xml'  xlink:title='InventoriesPolicies'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1409-rules-def.xml'  xlink:title='PropertyPlantAndEquipmentPolicies'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1410-rules-def.xml'  xlink:title='AccountsPayablePolicies'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1411-rules-def.xml'  xlink:title='LongTermDebtPolicies'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='1412-rules-def.xml'  xlink:title='RevenueRecognitionPolicies'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../disclosures-topics/disclosures-lab.xml'  xlink:title='Label linkbase for disclosures'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../base-taxonomy/mini-lab.xml'  xlink:title='Label linkbase for taxonomy'/>
+
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../disclosures-topics/disclosures-doc.xml'  xlink:title='Documentation linkbase for disclosures'/>
+   <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/referencelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../disclosures-topics/disclosures-ref.xml'  xlink:title='References linkbase for disclosures'/>
+
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

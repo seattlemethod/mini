@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/19/2023 8:33:00 AM -->
+<?twinfox name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?twinfox name='CreationDateTime' value='4/19/2023 8:33:00 AM'?>
+<?twinfox name='DisclosureName' value='disclosures:NatureOfEntity'?>
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='extended-link-roles.xsd#NatureOfEntity' roleURI='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/NatureOfEntity'/>
+ 
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-equivalentClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-equivalentTextblock' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-equivalentTextblock'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-hasConceptArrangementPattern' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern'/>
+ 
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/NatureOfEntity' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_NatureOfEntity' xlink:label='disclosures_NatureOfEntity' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Level1TextBlock' xlink:label='cm_Level1TextBlock' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern' xlink:to='cm_Level1TextBlock' xlink:from='disclosures_NatureOfEntity' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/NatureOfEntity' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_NatureOfEntity' xlink:label='disclosures_NatureOfEntity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_NatureBusinessTextBlock' xlink:label='mini_NatureBusinessTextBlock' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-equivalentTextblock' xlink:to='mini_NatureBusinessTextBlock' xlink:from='disclosures_NatureOfEntity' order='2' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

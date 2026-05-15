@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/19/2023 8:33:00 AM -->
+<?auditchain name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?auditchain name='CreationDateTime' value='4/19/2023 8:33:00 AM'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:elr='https://github.com/seattlemethod/mini/dm/elr'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  targetNamespace='https://github.com/seattlemethod/mini/dm/elr'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/BalanceSheetClassified'
+                 id='BalanceSheetClassified'>
+                 <link:definition>Balance Sheet, Classified</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/IncomeStatement'
+                 id='IncomeStatement'>
+                 <link:definition>Income Statement</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/StatementOfChangesInEquity'
+                 id='StatementOfChangesInEquity'>
+                 <link:definition>Statement of Changes in Equity</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/CashFlowStatementDirectMethod'
+                 id='CashFlowStatementDirectMethod'>
+                 <link:definition>Cash Flow Statement, Direct Method</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/NatureOfEntity'
+                 id='NatureOfEntity'>
+                 <link:definition>Nature of Entity</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/BasisOfPresentation'
+                 id='BasisOfPresentation'>
+                 <link:definition>Basis of Presentation</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/CashAndCashEquivalentsSubclassifications'
+                 id='CashAndCashEquivalentsSubclassifications'>
+                 <link:definition>Cash and Cash Equivalents Subclassifications</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/InventoriesSubclassifications'
+                 id='InventoriesSubclassifications'>
+                 <link:definition>Inventories Subclassifications</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/PropertyPlantAndEquipmentNetSubclassifications'
+                 id='PropertyPlantAndEquipmentNetSubclassifications'>
+                 <link:definition>Property, Plant, and Equipment, Net Subclassifications</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/PropertyPlantAndEquipmentNetRollForward'
+                 id='PropertyPlantAndEquipmentNetRollForward'>
+                 <link:definition>Property, Plant, and Equipment, Net Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/LongTermDebtMaturities'
+                 id='LongTermDebtMaturities'>
+                 <link:definition>Long-Term Debt Maturities</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/LongTermDebtSubclassifications'
+                 id='LongTermDebtSubclassifications'>
+                 <link:definition>Long-Term Debt Subclassifications</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/AssetsRollUp'
+                 id='AssetsRollUp'>
+                 <link:definition>Assets Roll Up</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/LiabilitiesAndEquityRollUp'
+                 id='LiabilitiesAndEquityRollUp'>
+                 <link:definition>Liabilities and Equity Roll Up</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/NetCashFlowRollUp'
+                 id='NetCashFlowRollUp'>
+                 <link:definition>Net Cash Flow Roll Up</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/CashAndCashEquivalentsSummaryRollForward'
+                 id='CashAndCashEquivalentsSummaryRollForward'>
+                 <link:definition>Cash and Cash Equivalents Summary Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/CashAndCashEquivalentsRollForward'
+                 id='CashAndCashEquivalentsRollForward'>
+                 <link:definition>Cash and Cash Equivalents Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/ReceivablesRollForward'
+                 id='ReceivablesRollForward'>
+                 <link:definition>Receivables Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/ReceivablesSubclassifications'
+                 id='ReceivablesSubclassifications'>
+                 <link:definition>Receivables Subclassifications</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/InventoriesRollForward'
+                 id='InventoriesRollForward'>
+                 <link:definition>Inventories Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/AccountsPayableRollForward'
+                 id='AccountsPayableRollForward'>
+                 <link:definition>Accounts Payable Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/AccountsPayableSubclassifications'
+                 id='AccountsPayableSubclassifications'>
+                 <link:definition>Accounts Payable Subclassifications</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/LongTermDebtRollForward'
+                 id='LongTermDebtRollForward'>
+                 <link:definition>Long-Term Debt Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/TrialBalance'
+                 id='TrialBalance'>
+                 <link:definition>Trial Balance</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/TransactionsGroupings'
+                 id='TransactionsGroupings'>
+                 <link:definition>Transactions Groupings</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/RetainedEarningsRollForward'
+                 id='RetainedEarningsRollForward'>
+                 <link:definition>Retained Earnings Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/PaidInCapitalRollForward'
+                 id='PaidInCapitalRollForward'>
+                 <link:definition>Paid In Capital Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/AccruedExpensesRollForward'
+                 id='AccruedExpensesRollForward'>
+                 <link:definition>Accrued Expenses Roll Forward</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/CashAndCashEquivalentsPolicy'
+                 id='CashAndCashEquivalentsPolicy'>
+                 <link:definition>Cash and Cash Equivalents Policy</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/ReceivablesPolicies'
+                 id='ReceivablesPolicies'>
+                 <link:definition>Receivables Policies</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/InventoriesPolicies'
+                 id='InventoriesPolicies'>
+                 <link:definition>Inventories Policies</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/PropertyPlantAndEquipmentPolicies'
+                 id='PropertyPlantAndEquipmentPolicies'>
+                 <link:definition>Property, Plant, and Equipment Policies</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/AccountsPayablePolicies'
+                 id='AccountsPayablePolicies'>
+                 <link:definition>Accounts Payable Policies</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/LongTermDebtPolicies'
+                 id='LongTermDebtPolicies'>
+                 <link:definition>Long-Term Debt Policies</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/RevenueRecognitionPolicies'
+                 id='RevenueRecognitionPolicies'>
+                 <link:definition>Revenue Recognition Policies</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

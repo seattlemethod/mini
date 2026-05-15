@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/7/2023 12:16:21 PM -->
+<?twinfox name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?twinfox name='CreationDateTime' value='2/7/2023 12:16:21 PM'?>
+<?twinfox name='DisclosureName' value='disclosures:DocumentInformation'?>
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='extended-link-roles.xsd#DocumentInformation' roleURI='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation'/>
+ 
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-equivalentClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#conceptArrangementPattern-requiresConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/conceptArrangementPattern-requiresConcept'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-hasConceptArrangementPattern' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-requiresConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept'/>
+ 
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_DocumentInformation' xlink:label='disclosures_DocumentInformation' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Hierarchy' xlink:label='cm_Hierarchy' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern' xlink:to='cm_Hierarchy' xlink:from='disclosures_DocumentInformation' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Hierarchy' xlink:label='cm_Hierarchy' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_BalanceSheetDate' xlink:label='mini_BalanceSheetDate' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/conceptArrangementPattern-requiresConcept' xlink:to='mini_BalanceSheetDate' xlink:from='cm_Hierarchy' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_DocumentInformation' xlink:label='disclosures_DocumentInformation' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_ReportingStyleCode' xlink:label='mini_ReportingStyleCode' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:to='mini_ReportingStyleCode' xlink:from='disclosures_DocumentInformation' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_DocumentInformation' xlink:label='disclosures_DocumentInformation' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DocumentTitle' xlink:label='mini_DocumentTitle' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:to='mini_DocumentTitle' xlink:from='disclosures_DocumentInformation' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_DocumentInformation' xlink:label='disclosures_DocumentInformation' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_IncomeStatementStartPeriod' xlink:label='mini_IncomeStatementStartPeriod' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:to='mini_IncomeStatementStartPeriod' xlink:from='disclosures_DocumentInformation' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_DocumentInformation' xlink:label='disclosures_DocumentInformation' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DocumentIdentifier' xlink:label='mini_DocumentIdentifier' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:to='mini_DocumentIdentifier' xlink:from='disclosures_DocumentInformation' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_DocumentInformation' xlink:label='disclosures_DocumentInformation' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DocumentFiscalPeriodFocus' xlink:label='mini_DocumentFiscalPeriodFocus' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:to='mini_DocumentFiscalPeriodFocus' xlink:from='disclosures_DocumentInformation' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/mini/dm/elr/DisclosureMechanics/DocumentInformation' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../disclosures-topics/disclosures.xsd#disclosures_DocumentInformation' xlink:label='disclosures_DocumentInformation' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/mini.xsd#mini_DocumentFiscalYearFocus' xlink:label='mini_DocumentFiscalYearFocus' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:to='mini_DocumentFiscalYearFocus' xlink:from='disclosures_DocumentInformation' order='8' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>
