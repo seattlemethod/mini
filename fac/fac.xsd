@@ -3,13 +3,6 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fac="https://github.com/seattlemethod/mini/fac" xmlns:generic="http://xbrl.org/2008/generic" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" targetNamespace="https://github.com/seattlemethod/mini/fac" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <annotation>
     <appinfo>
-      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/GeneralInformation" id="GeneralInformation">
-        <link:definition>FAC-001-General Information</link:definition>
-        <link:usedOn>link:presentationLink</link:usedOn>
-        <link:usedOn>link:calculationLink</link:usedOn>
-        <link:usedOn>link:definitionLink</link:usedOn>
-        <link:usedOn>generic:link</link:usedOn>
-      </link:roleType>
       <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/BSC" id="BSC">
         <link:definition>FAC-101-Balance Sheet, Classified (BSC)</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
@@ -51,19 +44,6 @@
         <link:usedOn>link:calculationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
         <link:usedOn>generic:link</link:usedOn>
-      </link:roleType>
-      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/KeyRatios" id="KeyRatios">
-        <link:definition>FAC-601-Key Ratios</link:definition>
-        <link:usedOn>link:presentationLink</link:usedOn>
-        <link:usedOn>link:calculationLink</link:usedOn>
-        <link:usedOn>link:definitionLink</link:usedOn>
-        <link:usedOn>generic:link</link:usedOn>
-      </link:roleType>
-      <link:roleType roleURI="https://github.com/seattlemethod/mini/fac/role/VR" id="VR">
-        <link:definition>FAC-701-Validation Results</link:definition>
-        <link:usedOn>link:presentationLink</link:usedOn>
-        <link:usedOn>link:calculationLink</link:usedOn>
-        <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
       <link:linkbaseRef xlink:type="simple" xlink:href="fac-lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links, all" />
       <link:linkbaseRef xlink:type="simple" xlink:href="fac-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Reference Links, all" />
