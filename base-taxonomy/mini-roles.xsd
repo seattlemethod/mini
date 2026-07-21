@@ -14,7 +14,7 @@
   <annotation>
      <appinfo>
 <link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/mini/role/level4/BalanceSheet" id="BalanceSheet">
-	<link:definition>1102 - Statement - Balance Sheet</link:definition>
+	<link:definition>1101 - Statement - Balance Sheet</link:definition>
 	<link:usedOn>link:presentationLink</link:usedOn>
 	<link:usedOn>link:calculationLink</link:usedOn>
 	<link:usedOn>link:definitionLink</link:usedOn>
